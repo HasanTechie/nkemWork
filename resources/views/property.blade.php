@@ -1,7 +1,8 @@
-<?php include 'header.php'; ?>
+@extends('layouts/master')
 
+@section('content')
     <!--Inner Page Banner-->
-    <section class="inner-page-banner style-two" style="background-image:url(images/background/bg-page-title.jpg);">
+    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Property Details</h1>
             <div class="text">Reprehenderit in voluptate velit esse cillum dolore.</div>
@@ -149,7 +150,8 @@
                                 </div>
                                 <div class="default-form quote-form">
                                     <h4>Request A Quote</h4>
-                                    <form method="post" action="contactus.php">
+                                    <form method="post" action="contactus">
+                                        {{ csrf_field() }}
                                         <div class="form-group">
                                             <input type="text" name="field-name" value="" placeholder="Name" required >
                                         </div>
@@ -225,5 +227,4 @@
             </div>
         </div>
     </div>
-
-<?php include 'footer.php'; ?>
+@endsection

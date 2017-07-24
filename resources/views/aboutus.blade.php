@@ -1,7 +1,8 @@
-<?php include 'header.php'; ?>
+@extends('layouts/master')
 
+@section('content')
     <!--Inner Page Banner-->
-    <section class="inner-page-banner style-two" style="background-image:url(images/background/bg-page-title.jpg);">
+    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>UKandcs</h1>
             <div class="text">Helping you make the right Move</div>
@@ -46,6 +47,7 @@
         </div>
     </div>
 
-<?php include 'partners.php'; ?>
-<?php include 'subscribe.php' ?>
-<?php include 'footer.php'; ?>
+@include('layouts/partner-section')
+@include('layouts/subscribe-section')
+
+@endsection

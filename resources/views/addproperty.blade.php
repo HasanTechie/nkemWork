@@ -31,7 +31,7 @@
 
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="index.php" title="Ukeandcs"><img src="images/logo.png" alt="Ukeandcs" title="Ukeandcs"></a></div>
+                    <div class="logo"><a href="/" title="Ukeandcs"><img src="images/logo.png" alt="Ukeandcs" title="Ukeandcs"></a></div>
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
 
 
     <!--Inner Page Banner-->
-    <section class="inner-page-banner style-two" style="background-image:url(images/background/bg-page-title.jpg);">
+    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Add Property</h1>
             <div class="text">Reprehenderit in voluptate velit esse cillum dolore.</div>
@@ -52,6 +52,7 @@
     <section class="add-property">
         <div class="default-form">
             <form method="post" action="#">
+                {{ csrf_field() }}
                 <!--Add Property Info-->
                 <div class="add-property-info">
                     <div class="auto-container">

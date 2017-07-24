@@ -31,12 +31,12 @@
 
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="index.php" title="Ukeandcs"><img src="images/logo.png" alt="Ukeandcs" title="Ukeandcs"></a></div>
+                    <div class="logo"><a href="/" title="Ukeandcs"><img src="images/logo.png" alt="Ukeandcs" title="Ukeandcs"></a></div>
                 </div>
 
                 <!--Other Links-->
                 <div class="other-links clearfix">
-                    <div class="link-box"><a class="add-property-btn theme-btn" href="contactus.php">Contact Us</a></div>
+                    <div class="link-box"><a class="add-property-btn theme-btn" href="contactus">Contact Us</a></div>
                 </div>
 
                 <!--Nav Outer-->
@@ -54,11 +54,11 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="properties.php">Properties</a></li>
-                                <li><a href="index.php">Business Rates</a></li>
-                                <li><a href="agents.php">Our Agents</a></li>
-                                <li><a href="aboutus.php">About Us</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="properties">Properties</a></li>
+                                <li><a href="/">Business Rates</a></li>
+                                <li><a href="agents">Our Agents</a></li>
+                                <li><a href="aboutus">About Us</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->

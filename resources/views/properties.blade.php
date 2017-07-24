@@ -1,14 +1,16 @@
-<?php include 'header.php'; ?>
+@extends('layouts/master')
 
+@section('content')
     <!--Inner Page Banner-->
-    <section class="inner-page-banner" style="background-image:url(images/background/bg-page-title.jpg);">
+    <section class="inner-page-banner" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Search Your Home</h1>
             <div class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
 
             <div class="banner-form-box medium">
                 <div class="default-form">
-                    <form method="post" action="properties.php">
+                    <form method="post" action="properties">
+                        {{ csrf_field() }}
                         <div class="row clearfix">
                             <div class="form-group col-md-9 col-sm-8 col-xs-12">
                                 <input type="text" name="field-name" value="" placeholder="Enter Location" required>
@@ -35,7 +37,8 @@
                         <!--Form Column-->
                         <div class="form-column">
                             <div class="default-form">
-                                <form method="post" action="properties.php">
+                                <form method="post" action="properties">
+                                    {{ csrf_field() }}
                                     <div class="option-box sort-by">
                                         <div class="sel-label">Sort By</div>
                                         <div class="form-group">
@@ -73,7 +76,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-1.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-1.jpg" alt=""></a></figure>
                                         <div class="property-price">$1,000 / Month</div>
                                     </div>
                                 </div>
@@ -85,12 +88,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater Manchester.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -110,7 +113,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-2.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-2.jpg" alt=""></a></figure>
                                         <div class="property-price">$27,000</div>
                                     </div>
                                 </div>
@@ -122,12 +125,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater London.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For sell</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -147,7 +150,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-3.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-3.jpg" alt=""></a></figure>
                                         <div class="property-price">$15,00 / Month</div>
                                     </div>
                                 </div>
@@ -159,12 +162,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater Manchester.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -184,7 +187,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-4.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-4.jpg" alt=""></a></figure>
                                         <div class="property-price">$27,000</div>
                                     </div>
                                 </div>
@@ -196,12 +199,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater London.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -221,7 +224,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-5.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-5.jpg" alt=""></a></figure>
                                         <div class="property-price">$800 / Month</div>
                                     </div>
                                 </div>
@@ -233,12 +236,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater Manchester.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -258,7 +261,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-6.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-6.jpg" alt=""></a></figure>
                                         <div class="property-price">$27,000</div>
                                     </div>
                                 </div>
@@ -270,12 +273,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater London.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -295,7 +298,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-3.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-3.jpg" alt=""></a></figure>
                                         <div class="property-price">$15,00 / Month</div>
                                     </div>
                                 </div>
@@ -307,12 +310,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater London.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -332,7 +335,7 @@
                                 <!--Image Column-->
                                 <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                     <div class="image-box">
-                                        <figure class="image"><a href="property.php"><img src="images/resource/featured-image-4.jpg" alt=""></a></figure>
+                                        <figure class="image"><a href="property"><img src="images/resource/featured-image-4.jpg" alt=""></a></figure>
                                         <div class="property-price">$27,000</div>
                                     </div>
                                 </div>
@@ -344,12 +347,12 @@
                                             <div class="rev">(105 reviews)</div>
                                         </div>
                                         <div class="property-title">
-                                            <h3><a href="property.php">146 Liverpool Street</a></h3>
+                                            <h3><a href="property">146 Liverpool Street</a></h3>
                                             <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater Manchester.</div>
                                         </div>
                                         <div class="prop-info clearfix">
                                             <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                                            <div class="link-box"><a href="property.php" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                            <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                         </div>
                                         <div class="property-meta">
                                             <ul class="clearfix">
@@ -382,7 +385,8 @@
                         <div class="title-header">Advance Search</div>
 
                         <div class="default-form">
-                            <form method="post" action="properties.php">
+                            <form method="post" action="properties">
+                                {{ csrf_field() }}
                                 <div class="row clearfix">
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="field-label">Status</div>
@@ -519,5 +523,5 @@
         </div>
     </section>
 
-<?php include 'subscribe.php' ?>
-<?php include 'footer.php'; ?>
+    @include('layouts/subscribe-section')
+@endsection

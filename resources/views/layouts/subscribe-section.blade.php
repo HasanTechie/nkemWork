@@ -32,7 +32,8 @@
         <div class="newsletter-style-one">
             <div class="desc-text">Subscribe for FREE to receive the latest porperty deals and don’t miss any of our great price on property deals.</div>
 
-            <form method="post" action="index.php">
+            <form method="post" action="contactus">
+                {{ csrf_field() }}
                 <div class="form-group">
                     <input type="email" name="text" value="" placeholder="Enter Your Email" required>
                     <button type="submit" class="theme-btn">Subscribe</button>

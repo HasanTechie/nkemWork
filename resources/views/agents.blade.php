@@ -1,15 +1,17 @@
-<?php include 'header.php'; ?>
+@extends('layouts/master')
 
+@section('content')
 
     <!--Inner Page Banner-->
-    <section class="inner-page-banner" style="background-image:url(images/background/bg-page-title.jpg);">
+    <section class="inner-page-banner" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Our Agents</h1>
             <div class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint.</div>
 
             <div class="banner-form-box">
                 <div class="default-form">
-                    <form method="post" action="agents.php">
+                    <form method="post" action="agents">
+                        {{ csrf_field() }}
                         <div class="row clearfix">
                             <div class="form-group col-md-3 col-sm-4 col-xs-12">
                                 <select class="custom-select-box">
@@ -50,10 +52,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-9.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-9.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Jhon Thomson</a></h3>
+                                <h3><a href="agent">Jhon Thomson</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -68,10 +70,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-10.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-10.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Antenio Lionardo</a></h3>
+                                <h3><a href="agent">Antenio Lionardo</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -86,10 +88,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-11.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-11.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Richard Marchel</a></h3>
+                                <h3><a href="agent">Richard Marchel</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -104,10 +106,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-12.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-12.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Henry Pitter</a></h3>
+                                <h3><a href="agent">Henry Pitter</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -122,10 +124,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-13.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-13.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Jhon Thomson</a></h3>
+                                <h3><a href="agent">Jhon Thomson</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -140,10 +142,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-14.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-14.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Antenio Lionardo</a></h3>
+                                <h3><a href="agent">Antenio Lionardo</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -158,10 +160,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-15.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-15.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Richard Marchel</a></h3>
+                                <h3><a href="agent">Richard Marchel</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -176,10 +178,10 @@
                 <!--Agent Box-->
                 <div class="agent-box col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <figure class="image-box"><a href="agent.php"><img src="images/resource/team-image-16.jpg" alt=""></a></figure>
+                        <figure class="image-box"><a href="agent"><img src="images/resource/team-image-16.jpg" alt=""></a></figure>
                         <div class="lower-content">
                             <div class="title-box">
-                                <h3><a href="agent.php">Henry Pitter</a></h3>
+                                <h3><a href="agent">Henry Pitter</a></h3>
                                 <div class="designation">Agent in London</div>
                             </div>
                             <ul class="contact-info">
@@ -209,5 +211,6 @@
         </div>
     </section>
 
-<?php include 'subscribe.php' ?>
-<?php include 'footer.php'; ?>
+    @include ('layouts/subscribe-section')
+
+@endsection

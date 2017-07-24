@@ -1,8 +1,8 @@
-<?php include 'header.php'; ?>
+@extends('layouts/master')
 
-
+@section('content')
     <!--Inner Page Banner-->
-    <section class="inner-page-banner style-two" style="background-image:url(images/background/bg-page-title.jpg);">
+    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Contact Us</h1>
             <div class="text">Helping you make the right Move</div>
@@ -21,7 +21,8 @@
                         <div class="title"><h2>Send Us Message</h2></div>
                         <!-- Contact Form -->
                         <div class="contact-form">
-                            <form method="post" id="contact-form" action="sendemail.php">
+                            <form method="post" id="contact-form" action="">
+                                {{ csrf_field() }}
                                 <div class="row clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                                         <input type="text" name="username" placeholder="Name" required>
@@ -44,7 +45,9 @@
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send Message</button>
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Send
+                                            Message
+                                        </button>
                                     </div>
 
                                 </div>
@@ -60,9 +63,18 @@
                     <div class="inner">
                         <div class="title"><h2>Contact Information</h2></div>
                         <ul class="contact-info">
-                            <li><div class="icon-box"><span class="fa fa-map-marker"></span></div> 1419 Liverpool Street. <br>London </li>
-                            <li><div class="icon-box"><span class="fa fa-phone"></span></div> +020 111 234 4567 <br>+020 111 234 4568</li>
-                            <li><div class="icon-box"><span class="fa fa-envelope"></span></div> support@ukeandcs.com</li>
+                            <li>
+                                <div class="icon-box"><span class="fa fa-map-marker"></span></div>
+                                1419 Liverpool Street. <br>London
+                            </li>
+                            <li>
+                                <div class="icon-box"><span class="fa fa-phone"></span></div>
+                                +020 111 234 4567 <br>+020 111 234 4568
+                            </li>
+                            <li>
+                                <div class="icon-box"><span class="fa fa-envelope"></span></div>
+                                support@ukeandcs.com
+                            </li>
                         </ul>
 
                         <!--Social Links-->
@@ -97,4 +109,4 @@
         </div>
     </section>
 
-<?php include 'footer.php'; ?>
+@endsection
