@@ -61,3 +61,19 @@ $factory->define(App\Property::class, function ($faker){
         'phone' => $faker->e164PhoneNumber
     ];
 });
+
+$factory->define(App\Testimonial::class, function($faker) {
+    return [
+        'user_id' => function(){
+            return factory('App\User')->create()->id;
+        },
+        'name'  =>  $faker->name,
+        'designation' => function(){
+            $array = ['teacher', 'doctor', 'engineer', 'programmer'];
+            return $array[array_rand($array)];
+        },
+        'company' => $faker->firstName . ' Company',
+        'testimonial' => $faker->text,
+        'media' => $faker->text
+    ];
+});
