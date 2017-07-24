@@ -22,3 +22,42 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Property::class, function ($faker){
+    return [
+        'user_id' => function(){
+            return factory('App\User')->create()->id;
+        } ,
+        'title' => $faker->firstName . ' house',
+        'status' => function(){
+            $array=['sale','rent'];
+            return $array[array_rand($array)];
+        },
+        'type' => function(){
+            $array=['commerical','residential'];
+            return $array[array_rand($array)];
+        },
+        'area' => $faker->randomNumber(3),
+        'images' => $faker->text,
+        'address' => $faker->address,
+        'state' => $faker->state,
+        'city' => $faker->city,
+        'postcode' => $faker->postcode,
+        'description' => $faker->text,
+        'bedroom' => $faker->randomNumber(1),
+        'kitchen' => $faker->randomNumber(1),
+        'bathroom' => $faker->randomNumber(1),
+        'dinningroom' => $faker->randomNumber(1),
+        'drawingroom' => $faker->randomNumber(1),
+        'garage' => $faker->randomNumber(1),
+        'swimmingpool' => (int) $faker->boolean,
+        'gym' => (int) $faker-> boolean,
+        'firesafety' => (int) $faker->boolean,
+        'garden' => (int) $faker->boolean,
+        'guesthouse' => (int) $faker->boolean,
+        'centralheating' => (int) $faker->boolean,
+        'name' => $faker->name,
+        'email' => $faker->safeEmail,
+        'phone' => $faker->e164PhoneNumber
+    ];
+});
