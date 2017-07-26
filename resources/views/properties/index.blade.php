@@ -77,7 +77,7 @@
                                     <!--Image Column-->
                                     <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                         <div class="image-box">
-                                            <figure class="image"><a href="property"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></a></figure>
+                                            <figure class="image"><a href="{{$property->path()}}"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></a></figure>
                                             <div class="property-price">${{$property->price}} / Month</div>
                                         </div>
                                     </div>
@@ -85,12 +85,12 @@
                                     <div class="content-column col-md-6 col-sm-6 col-xs-12">
                                         <div class="lower-content">
                                             <div class="property-title">
-                                                <h3><a href="property">{{$property->address}}</a></h3>
+                                                <h3><a href="{{$property->path()}}">{{$property->address}}</a></h3>
                                                 <div class="location"><span class="fa fa-map-marker"></span>&nbsp; {{$property->postcode}} {{$property->city}} {{$property->state}}.</div>
                                             </div>
                                             <div class="prop-info clearfix">
                                                 <div class="prop-for"><span class="for">For {{$property->type}}</span><span class="area">{{$property->area}} sq ft.</span></div>
-                                                <div class="link-box"><a href="property" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
+                                                <div class="link-box"><a href="{{$property->path()}}" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
                                             </div>
                                             <div class="property-meta">
                                                 <ul class="clearfix">

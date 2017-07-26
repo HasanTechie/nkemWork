@@ -11,9 +11,18 @@ class PropertiesTest extends TestCase
     /** @test */
     public function a_user_can_view_properties()
     {
-
+        $property = factory('App\Property')->create();
         $response = $this->get('/properties');
 
-        $response->assertStatus(200);
+        $response->assertSee($property->address);
+    }
+
+    /** @test */
+    public function a_user_can_view_single_property()
+    {
+        $property = factory('App\Property')->create();
+        $response = $this->get('/properties/'.$property->id);
+
+        $response->assertSee($property->address);
     }
 }
