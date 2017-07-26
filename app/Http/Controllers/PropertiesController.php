@@ -15,6 +15,9 @@ class PropertiesController extends Controller
     public function index()
     {
         //
+        $properties = Property::latest()->get();
+
+        return view('properties.index', compact('properties'));
     }
 
     /**
@@ -47,6 +50,7 @@ class PropertiesController extends Controller
     public function show(Property $property)
     {
         //
+        return view('properties.show', compact('property'));
     }
 
     /**

@@ -14,6 +14,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->composer('layouts/sidebar-properties', function($view){
+            $properties = \App\Property::take(5)->get();
+
+            $view->with(compact('properties'));
+        });
     }
 
     /**

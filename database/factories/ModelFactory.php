@@ -37,8 +37,13 @@ $factory->define(App\Property::class, function ($faker){
             $array=['commerical','residential'];
             return $array[array_rand($array)];
         },
+        'price' => $faker->randomNumber(5),
         'area' => $faker->randomNumber(3),
-        'images' => $faker->text,
+        'images' => function(){
+            $array=['featured-image-12.jpg','featured-image-15.jpg','featured-image-16.jpg','featured-image-17.jpg'];
+            return $array[array_rand($array)];
+        },
+//        'images' => $faker->imageUrl('360', '240', 'city'),
         'address' => $faker->address,
         'state' => $faker->state,
         'city' => $faker->city,

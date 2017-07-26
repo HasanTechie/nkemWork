@@ -10,7 +10,7 @@
                         <!--Footer Column-->
                         <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                             <div class="footer-widget about-widget">
-                                <div class="logo"><a href="index.php"><img src="images/footer-logo.png" alt=""></a></div>
+                                <div class="logo"><a href="index.php"><img src="{{ asset('images/footer-logo.png')}}" alt=""></a></div>
                                 <div class="widget-content">
                                     <div class="text">UK Estate has established in 2016 and we are located heart of East London, close to Docklands and Tower Bridge. We are regulated by Property Ombudsman as well as client deposit scheme.</div>
                                     <div class="copyright-text">&copy; Ukeandcs 2017, All Rights Reserved.</div>
@@ -88,21 +88,21 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
 
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/mixitup.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/validate.js"></script>
-<script src="js/script.js"></script>
+<script src="{{asset('js/jquery.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/jquery-ui.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox.pack.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox-media.js')}}"></script>
+<script src="{{asset('js/mixitup.js')}}"></script>
+<script src="{{asset('js/owl.js')}}"></script>
+<script src="{{asset('js/wow.js')}}"></script>
+<script src="{{asset('js/appear.js')}}"></script>
+<script src="{{asset('js/validate.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
 
 <!--Google Map APi Key-->
 <script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
-<script src="js/map-script.js"></script>
+<script src="{{asset('js/map-script.js')}}"></script>
 <!--End Google Map APi-->
 
 </body>
