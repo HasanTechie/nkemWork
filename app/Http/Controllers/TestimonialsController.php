@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Testimonial;
 use Illuminate\Http\Request;
 
-class TestimonialController extends Controller
+class TestimonialsController extends Controller
 {
     /**
      * Display a listing of the resource.
