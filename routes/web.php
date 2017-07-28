@@ -28,3 +28,7 @@ Route::get('/agents', function () {   return view('agents');   });
 Route::post('/agents', function () {   return view('agents');   });
 
 Route::get('/addproperty', function () {   return view('addproperty');   });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
