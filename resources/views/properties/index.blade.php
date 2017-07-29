@@ -95,7 +95,7 @@
                                             <div class="property-meta">
                                                 <ul class="clearfix">
                                                     <li><span class="icon fa fa-user"></span> {{$property->name}}</li>
-                                                    <li><span class="icon fa fa-calendar"></span> {{$property->created_at->toFormattedDateString()}}</li>
+                                                    <li><span class="icon fa fa-calendar"></span> {{$property->created_at->diffForHumans()}}</li>
                                                     <li class="options">&ensp; </li>
                                                 </ul>
                                             </div>
