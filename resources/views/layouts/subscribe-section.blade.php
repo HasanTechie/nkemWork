@@ -21,7 +21,7 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
-<section class="newsletter-section style-two" style="background-image:url(images/background/image-3.jpg);">
+<section class="newsletter-section style-two" style="background-image:url({{asset('images/background/image-3.jpg')}});">
     <div class="auto-container">
         <!--Heading-->
         <div class="sec-title centered">
