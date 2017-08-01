@@ -10,7 +10,7 @@
                         <!--Footer Column-->
                         <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                             <div class="footer-widget about-widget">
-                                <div class="logo"><a href="/"><img src="{{ asset('images/footer-logo.png')}}"
+                                <div class="logo"><a href="/"><img width="140" height="40" src="{{ asset('images/footer-logo.png')}}"
                                                                    alt=""></a></div>
                                 <div class="widget-content">
                                     <div class="text">UK Estate has established in 2016 and we are located heart of East
