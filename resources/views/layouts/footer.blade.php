@@ -10,13 +10,9 @@
                         <!--Footer Column-->
                         <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                             <div class="footer-widget about-widget">
-                                <div class="logo"><a href="/"><img src="{{ asset('images/footer-logo.png')}}"
-                                                                   alt=""></a></div>
+                                <div class="logo"><a href="/"><img src="{{ asset('images/footer-logo.png')}}" alt=""></a></div>
                                 <div class="widget-content">
-                                    <div class="text">UK Estate has established in 2016 and we are located heart of East
-                                        London, close to Docklands and Tower Bridge. We are regulated by Property
-                                        Ombudsman as well as client deposit scheme.
-                                    </div>
+                                    <div class="text">UK Estate has established in 2016 and we are located heart of East London, close to Docklands and Tower Bridge. We are regulated by Property Ombudsman as well as client deposit scheme.</div>
                                     <div class="copyright-text">&copy; Ukeandcs 2017, All Rights Reserved.</div>
                                 </div>
                             </div>
@@ -49,17 +45,10 @@
                             <div class="footer-widget contact-widget">
                                 <h2>Contact Us</h2>
                                 <div class="widget-content">
-                                    <div class="text">Feel free to ger in touch with us via phone or send us a
-                                        message.
-                                    </div>
+                                    <div class="text">Feel free to ger in touch with us via phone or send us a message.</div>
                                     <ul class="contact-info">
-                                        <li>
-                                            <div class="icon"><span class="fa fa-envelope-o"></span></div>
-                                            <a href="mailto:info@ukeandcs.com">info@ukeandcs.com</a></li>
-                                        <li>
-                                            <div class="icon"><span class="fa fa-phone"></span></div>
-                                            +020 111 234 4567
-                                        </li>
+                                        <li><div class="icon"><span class="fa fa-envelope-o"></span></div> <a href="mailto:info@ukeandcs.com">info@ukeandcs.com</a></li>
+                                        <li><div class="icon"><span class="fa fa-phone"></span></div> +020 111 234 4567</li>
                                     </ul>
                                 </div>
                             </div>
@@ -71,16 +60,11 @@
                                 <h2>Folow Us</h2>
                                 <div class="widget-content">
                                     <ul class="social-links">
-                                        <li><a href="https://facebook.com" class="facebook"><span
-                                                        class="fa fa-facebook-f"></span></a></li>
-                                        <li><a href="https://twitter.com" class="twitter"><span
-                                                        class="fa fa-twitter"></span></a></li>
-                                        <li><a href="https://plus.google.com" class="google-plus"><span
-                                                        class="fa fa-google-plus"></span></a></li>
-                                        <li><a href="https://linkedin.com" class="linkedin"><span
-                                                        class="fa fa-linkedin"></span></a></li>
-                                        <li><a href="https://instagram.com" class="instagram"><span
-                                                        class="fa fa-instagram"></span></a></li>
+                                        <li><a href="https://facebook.com" class="facebook"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="https://twitter.com" class="twitter"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="https://plus.google.com" class="google-plus"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="https://linkedin.com" class="linkedin"><span class="fa fa-linkedin"></span></a></li>
+                                        <li><a href="https://instagram.com" class="instagram"><span class="fa fa-instagram"></span></a></li>
                                     </ul>
                                 </div>
                             </div>
