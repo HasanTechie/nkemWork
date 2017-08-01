@@ -3,7 +3,7 @@
     <div class="auto-container">
         <!--Heading-->
         <div class="sec-title centered">
-            <h2>As Featured On</h2>
+            <h2>Our Partners</h2>
         </div>
 
         <ul class="sponsors-carousel owl-theme owl-carousel">

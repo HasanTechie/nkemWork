@@ -4,8 +4,10 @@
     <!--Inner Page Banner-->
     <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
-            <h1>Property Details</h1>
-            <div class="text">Reprehenderit in voluptate velit esse cillum dolore.</div>
+            <div class="sec-title centered">
+                <h2 style="color:white">Property Details</h2>
+                <div class="text">Reprehenderit in voluptate velit esse cillum dolore.</div>
+            </div>
         </div>
     </section>
 

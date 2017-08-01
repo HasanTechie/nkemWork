@@ -58,10 +58,10 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="properties">Properties</a></li>
+                                <li><a href="/properties">Properties</a></li>
                                 <li><a href="/">Business Rates</a></li>
-                                <li><a href="agents">Our Agents</a></li>
-                                <li><a href="aboutus">About Us</a></li>
+                                <li><a href="/testimonials">Testimonials</a></li>
+                                <li><a href="/aboutus">About Us</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->

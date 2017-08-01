@@ -22,10 +22,7 @@ Route::post('/properties', 'PropertiesController@index');
 
 Route::get('/properties/{property}', 'PropertiesController@show');
 
-Route::get('/agent', function () {   return view('agent');   });
-
-Route::get('/agents', function () {   return view('agents');   });
-Route::post('/agents', function () {   return view('agents');   });
+Route::get('/testimonials', 'TestimonialsController@index');
 
 Route::get('/addproperty', function () {   return view('addproperty');   });
 

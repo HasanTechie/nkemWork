@@ -79,6 +79,9 @@ $factory->define(App\Testimonial::class, function($faker) {
         },
         'company' => $faker->firstName . ' Company',
         'testimonial' => $faker->text,
-        'media' => $faker->text
+        'media' => function(){
+        $array=['featured-image-10.jpg','featured-image-10.jpg','featured-image-10.jpg','featured-image-10.jpg'];
+        return $array[array_rand($array)];
+    },
     ];
 });

@@ -4,8 +4,10 @@
     <!--Inner Page Banner-->
     <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
-            <h1>UKandcs</h1>
+            <div class="sec-title centered">
+                <h2 style="color:white">About UKeandcs</h2>
             <div class="text">Helping you make the right Move</div>
+            </div>
         </div>
     </section>
 
