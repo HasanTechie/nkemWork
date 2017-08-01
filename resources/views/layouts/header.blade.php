@@ -23,8 +23,8 @@
 
 <div class="page-wrapper">
 
-    <!-- Preloader -->
-    <div class="preloader"></div>
+    {{--<!-- Preloader -->--}}
+    {{--<div class="preloader"></div>--}}
 
     <!-- Main Header-->
     <header class="main-header">
