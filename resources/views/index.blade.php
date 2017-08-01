@@ -406,7 +406,7 @@
                                         </div>
                                         <div class="author-info">
                                             <h4>Shah Paran</h4>
-                                            <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>
+                                            <div class="designation">Manager @<a href="#">Reki Housing</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -434,7 +434,7 @@
                                         </div>
                                         <div class="author-info">
                                             <h4>Shah Paran</h4>
-                                            <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>
+                                            <div class="designation">Administrator @<a href="#">Reki Housing</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -462,7 +462,7 @@
                                         </div>
                                         <div class="author-info">
                                             <h4>Shah Paran</h4>
-                                            <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>
+                                            <div class="designation">Radiologist @<a href="#">Reki Housing</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -490,7 +490,7 @@
                                         </div>
                                         <div class="author-info">
                                             <h4>Shah Paran</h4>
-                                            <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>
+                                            <div class="designation">Senior Engineer @<a href="#">Reki Housing</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -518,7 +518,7 @@
                                         </div>
                                         <div class="author-info">
                                             <h4>Shah Paran</h4>
-                                            <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>
+                                            <div class="designation">Doctor @<a href="#">Reki Housing</a></div>
                                         </div>
                                     </div>
                                 </div>

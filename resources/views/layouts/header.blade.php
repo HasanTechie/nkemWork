@@ -39,7 +39,7 @@
 
                 <!--Other Links-->
                 <div class="other-links clearfix">
-                    <div class="link-box"><a class="add-property-btn theme-btn" href="contactus">Contact Us</a></div>
+                    <div class="link-box"><a class="add-property-btn theme-btn" href="{{ url('/contactus') }}">Contact Us</a></div>
                 </div>
 
                 <!--Nav Outer-->
@@ -57,11 +57,11 @@
 
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/properties">Properties</a></li>
-                                <li><a href="/">Business Rates</a></li>
-                                <li><a href="/testimonials">Testimonials</a></li>
-                                <li><a href="/aboutus">About Us</a></li>
+                                <li><a href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ url('/properties') }}">Properties</a></li>
+                                <li><a href="{{ url('/') }}">Business Rates</a></li>
+                                <li><a href="{{ url('/testimonials') }}">Testimonials</a></li>
+                                <li><a href="{{ url('/aboutus') }}">About Us</a></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->

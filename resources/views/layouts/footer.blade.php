@@ -25,10 +25,10 @@
                                 <h2>Quick Links</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="/properties">Properties</a></li>
-                                        <li><a href="/">Business Rates</a></li>
-                                        <li><a href="/testimonials">Testimonials</a></li>
-                                        <li><a href="/aboutus">About Us</a></li>
+                                        <li><a href="{{ url('/properties') }}">Properties</a></li>
+                                        <li><a href="{{ url('/') }}">Business Rates</a></li>
+                                        <li><a href="{{ url('/testimonials') }}">Testimonials</a></li>
+                                        <li><a href="{{ url('/aboutus') }}">About Us</a></li>
                                     </ul>
                                 </div>
                             </div>
