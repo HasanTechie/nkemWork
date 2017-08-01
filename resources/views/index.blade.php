@@ -78,7 +78,8 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="property"><img
-                                                src="{{asset('images/resource/featured-image-11.jpg')}}" alt=""></a></figure>
+                                                src="{{asset('images/resource/featured-image-11.jpg')}}" alt=""></a>
+                                </figure>
                                 <div class="prop-cat rent-cat">For Rent</div>
                             </div>
                             <div class="lower-content">
@@ -112,7 +113,8 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="property"><img
-                                                src="{{asset('images/resource/featured-image-12.jpg')}}" alt=""></a></figure>
+                                                src="{{asset('images/resource/featured-image-12.jpg')}}" alt=""></a>
+                                </figure>
                                 <div class="prop-cat sell-cat">For Sell</div>
                             </div>
                             <div class="lower-content">
@@ -146,7 +148,8 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="property"><img
-                                                src="{{asset('images/resource/featured-image-13.jpg')}}" alt=""></a></figure>
+                                                src="{{asset('images/resource/featured-image-13.jpg')}}" alt=""></a>
+                                </figure>
                                 <div class="prop-cat rent-cat">For Rent</div>
                             </div>
                             <div class="lower-content">
@@ -180,7 +183,8 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="property"><img
-                                                src="{{asset('images/resource/featured-image-14.jpg')}}" alt=""></a></figure>
+                                                src="{{asset('images/resource/featured-image-14.jpg')}}" alt=""></a>
+                                </figure>
                                 <div class="prop-cat sell-cat">For Sell</div>
                             </div>
                             <div class="lower-content">
@@ -214,7 +218,8 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="property"><img
-                                                src="{{asset('images/resource/featured-image-15.jpg')}}" alt=""></a></figure>
+                                                src="{{asset('images/resource/featured-image-15.jpg')}}" alt=""></a>
+                                </figure>
                                 <div class="prop-cat rent-cat">For Rent</div>
                             </div>
                             <div class="lower-content">
@@ -248,7 +253,8 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="property"><img
-                                                src="{{asset('images/resource/featured-image-16.jpg')}}" alt=""></a></figure>
+                                                src="{{asset('images/resource/featured-image-16.jpg')}}" alt=""></a>
+                                </figure>
                                 <div class="prop-cat sell-cat">For Sell</div>
                             </div>
                             <div class="lower-content">
@@ -302,7 +308,8 @@
                     <div class="popular-place-box">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{asset('images/resource/featured-image-17.jpg')}}" alt=""></figure>
+                                <figure class="image"><img src="{{asset('images/resource/featured-image-17.jpg')}}"
+                                                           alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>London</h4>
                                     <div class="count">24 Properties</div>
@@ -315,7 +322,8 @@
                     <div class="popular-place-box">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{asset('images/resource/featured-image-20.jpg')}}" alt=""></figure>
+                                <figure class="image"><img src="{{asset('images/resource/featured-image-20.jpg')}}"
+                                                           alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>Liverpool</h4>
                                     <div class="count">24 Properties</div>
@@ -332,7 +340,8 @@
                         <div class="popular-place-box col-md-6 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-18.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-18.jpg')}}"
+                                                               alt="">
                                     </figure>
                                     <div class="overlay-content">
                                         <h4>Manchester</h4>
@@ -346,7 +355,8 @@
                         <div class="popular-place-box col-md-6 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-19.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-19.jpg')}}"
+                                                               alt="">
                                     </figure>
                                     <div class="overlay-content">
                                         <h4>Leeds</h4>
@@ -361,7 +371,8 @@
                     <div class="popular-place-box">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><img src="{{asset('images/resource/featured-image-21.jpg')}}" alt=""></figure>
+                                <figure class="image"><img src="{{asset('images/resource/featured-image-21.jpg')}}"
+                                                           alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>Glasgow</h4>
                                     <div class="count">24 Properties</div>
@@ -392,7 +403,8 @@
                             <div class="clearfix">
                                 <!--Image Column-->
                                 <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}"
+                                                               alt="">
                                     </figure>
                                 </div>
                                 <!--Content Column-->
@@ -420,7 +432,8 @@
                             <div class="clearfix">
                                 <!--Image Column-->
                                 <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}"
+                                                               alt="">
                                     </figure>
                                 </div>
                                 <!--Content Column-->
@@ -448,7 +461,8 @@
                             <div class="clearfix">
                                 <!--Image Column-->
                                 <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}"
+                                                               alt="">
                                     </figure>
                                 </div>
                                 <!--Content Column-->
@@ -476,7 +490,8 @@
                             <div class="clearfix">
                                 <!--Image Column-->
                                 <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}"
+                                                               alt="">
                                     </figure>
                                 </div>
                                 <!--Content Column-->
@@ -504,7 +519,8 @@
                             <div class="clearfix">
                                 <!--Image Column-->
                                 <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}" alt="">
+                                    <figure class="image"><img src="{{asset('images/resource/featured-image-10.jpg')}}"
+                                                               alt="">
                                     </figure>
                                 </div>
                                 <!--Content Column-->

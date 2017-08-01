@@ -15,18 +15,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="{{ asset('js/respond.js' )}}"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="{{ asset('js/respond.js' )}}"></script><![endif]-->
 </head>
 
 <body>
 
 <div class="page-wrapper">
 
-    {{--<!-- Preloader -->--}}
-    {{--<div class="preloader"></div>--}}
+{{--<!-- Preloader -->--}}
+{{--<div class="preloader"></div>--}}
 
-    <!-- Main Header-->
+<!-- Main Header-->
     <header class="main-header">
 
         <div class="main-box">
@@ -34,12 +36,14 @@
 
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="/" title="Ukeandcs"><img src="{{ asset('images/logo.png')}}" alt="Ukeandcs" title="Ukeandcs"></a></div>
+                    <div class="logo"><a href="/" title="Ukeandcs"><img src="{{ asset('images/logo.png')}}"
+                                                                        alt="Ukeandcs" title="Ukeandcs"></a></div>
                 </div>
 
                 <!--Other Links-->
                 <div class="other-links clearfix">
-                    <div class="link-box"><a class="add-property-btn theme-btn" href="{{ url('/contactus') }}">Contact Us</a></div>
+                    <div class="link-box"><a class="add-property-btn theme-btn" href="{{ url('/contactus') }}">Contact
+                            Us</a></div>
                 </div>
 
                 <!--Nav Outer-->
@@ -48,7 +52,8 @@
                     <nav class="main-menu">
                         <div class="navbar-header">
                             <!-- Toggle Button -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>

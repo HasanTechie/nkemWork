@@ -6,7 +6,7 @@
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2 style="color:white">About UKeandcs</h2>
-            <div class="text">Helping you make the right Move</div>
+                <div class="text">Helping you make the right Move</div>
             </div>
         </div>
     </section>

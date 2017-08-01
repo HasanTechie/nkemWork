@@ -30,7 +30,9 @@
 
         <!--Newsletter Style One-->
         <div class="newsletter-style-one">
-            <div class="desc-text">Subscribe for FREE to receive the latest porperty deals and don’t miss any of our great price on property deals.</div>
+            <div class="desc-text">Subscribe for FREE to receive the latest porperty deals and don’t miss any of our
+                great price on property deals.
+            </div>
 
             <form method="post" action="contactus">
                 {{ csrf_field() }}

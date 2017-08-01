@@ -12,8 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
@@ -31,7 +33,8 @@
 
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="/" title="Ukeandcs"><img src="images/logo.png" alt="Ukeandcs" title="Ukeandcs"></a></div>
+                    <div class="logo"><a href="/" title="Ukeandcs"><img src="images/logo.png" alt="Ukeandcs"
+                                                                        title="Ukeandcs"></a></div>
                 </div>
             </div>
         </div>
@@ -41,7 +44,8 @@
 
 
     <!--Inner Page Banner-->
-    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
+    <section class="inner-page-banner style-two"
+             style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Add Property</h1>
             <div class="text">Reprehenderit in voluptate velit esse cillum dolore.</div>
@@ -52,8 +56,8 @@
     <section class="add-property">
         <div class="default-form">
             <form method="post" action="#">
-                {{ csrf_field() }}
-                <!--Add Property Info-->
+            {{ csrf_field() }}
+            <!--Add Property Info-->
                 <div class="add-property-info">
                     <div class="auto-container">
                         <div class="sec-title centered"><h2>Property Information</h2></div>
@@ -222,7 +226,9 @@
                             </div>
 
                             <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <div class="button-box"><button type="submit" class="theme-btn btn-style-one">Add Property</button></div>
+                                <div class="button-box">
+                                    <button type="submit" class="theme-btn btn-style-one">Add Property</button>
+                                </div>
                             </div>
                         </div>
                     </div>
