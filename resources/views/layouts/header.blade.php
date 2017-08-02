@@ -64,7 +64,7 @@
                             <ul class="navigation clearfix">
                                 <li><a href="{{ url('/') }}">Home</a></li>
                                 <li><a href="{{ url('/properties') }}">Properties</a></li>
-                                <li><a href="{{ url('/') }}">Business Rates</a></li>
+                                <li><a href="{{ url('/businessrates') }}">Business Rates</a></li>
                                 <li><a href="{{ url('/testimonials') }}">Testimonials</a></li>
                                 <li><a href="{{ url('/aboutus') }}">About Us</a></li>
                             </ul>

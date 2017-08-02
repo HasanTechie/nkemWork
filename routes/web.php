@@ -17,6 +17,9 @@ Route::get('/aboutus', function () {   return view('aboutus');   });
 Route::get('/contactus', function () {   return view('contactus');   });
 Route::post('/contactus', function () {   return view('contactus');   });
 
+Route::get('/businessrates', function () {   return view('businessrates');   });
+Route::post('/businessrates', function () {   return view('businessrates');   });
+
 Route::get('/properties', 'PropertiesController@index');
 Route::post('/properties', 'PropertiesController@index');
 

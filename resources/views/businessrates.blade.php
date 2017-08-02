@@ -6,8 +6,8 @@
              style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2 style="color:white">Contact Us</h2>
-                <div class="text">Helping you make the right Move</div>
+                <h2 style="color:white">Get Business Rates</h2>
+                <div class="text">Claim your business rates refunds and / reductions with "No Win NO Fee"</div>
             </div>
         </div>
     </section>
