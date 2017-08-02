@@ -40,7 +40,15 @@
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <input type="text" name="website" placeholder="Website" required>
+                                        <input type="text" name="company" placeholder="Company Name" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="postcode" placeholder="PostCode" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="rateable" placeholder="Rateable Value" required>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
@@ -72,7 +80,7 @@
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-phone"></span></div>
-                                +020 111 234 4567 <br>+020 111 234 4568
+                                +020 111 234 4567 <br>+020 123 234 4568
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-envelope"></span></div>

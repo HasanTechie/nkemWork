@@ -72,7 +72,7 @@
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-phone"></span></div>
-                                +020 111 234 4567 <br>+020 111 234 4568
+                                +020 111 234 4567 <br>+020 123 234 4568
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-envelope"></span></div>
