@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Testimonial;
+use App\Property;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller

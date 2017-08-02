@@ -42,11 +42,11 @@
 
                             <!--Product Thumbs Carousel-->
                             <div class="prod-thumbs-carousel owl-theme owl-carousel">
-                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/gallery/gallery-thumb-1.jpg')}}" alt=""></figure></div>
-                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/gallery/gallery-thumb-1.jpg')}}" alt=""></figure></div>
-                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/gallery/gallery-thumb-1.jpg')}}" alt=""></figure></div>
-                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/gallery/gallery-thumb-1.jpg')}}" alt=""></figure></div>
-                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/gallery/gallery-thumb-1.jpg')}}" alt=""></figure></div>
+                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></figure></div>
+                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></figure></div>
+                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></figure></div>
+                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></figure></div>
+                                <div class="thumb-item"><figure class="thumb-box"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></figure></div>
                             </div>
 
                         </div><!--End Product Carousel-->
@@ -55,7 +55,7 @@
                             <div class="medium-title"><h3>PROPERTY DESCRIPTION</h3></div>
                             <div class="info">
                                 <ul>
-                                    <li>Price : &ensp;<span class="price">${{$property->price}}</span></li>
+                                    <li>Price : &ensp;<span class="price">&pound;{{$property->price}}</span></li>
                                     <li>Area : &ensp;&ensp;<span class="area">{{$property->area}} sq ft.</span></li>
                                 </ul>
                             </div>

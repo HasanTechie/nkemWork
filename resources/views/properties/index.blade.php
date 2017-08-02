@@ -78,7 +78,7 @@
                                     <div class="image-column col-md-6 col-sm-6 col-xs-12">
                                         <div class="image-box">
                                             <figure class="image"><a href="{{$property->path()}}"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></a></figure>
-                                            <div class="property-price">${{$property->price}} / Month</div>
+                                            <div class="property-price">&pound;{{$property->price}}</div>
                                         </div>
                                     </div>
                                     <!--Content Column-->
@@ -160,7 +160,7 @@
                                         <div class="range-slider-one">
                                             <div class="slider-header">
                                                 <div class="clearfix">
-                                                    <div class="title">Price Range ($):</div>
+                                                    <div class="title">Price Range (&pound;):</div>
                                                     <div class="input"><input type="text" class="property-amount" name="field-name" readonly></div>
                                                 </div>
                                             </div>

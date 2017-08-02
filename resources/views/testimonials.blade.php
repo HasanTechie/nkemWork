@@ -18,7 +18,7 @@
                                     <!--Image Column-->
                                     <div class="image-column col-md-3 col-sm-12 col-xs-12">
                                         <figure class="image"><img width="570" height="503"
-                                                                   src="{{asset('images/resource/' . $testimonial->media)}}"
+                                                                   src="{{asset('images/resource/'.$testimonial->media)}}"
                                                                    alt="">
                                         </figure>
                                     </div>

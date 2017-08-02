@@ -66,228 +66,48 @@
                 <div class="filters gallery-filters">
                     <ul class="filter-tabs filter-btns clearfix">
                         <li class="active filter" data-role="button" data-filter="all">Any Type</li>
-                        <li class="filter" data-role="button" data-filter=".for-sell">For Sell</li>
-                        <li class="filter" data-role="button" data-filter=".for-rent">For Rent</li>
+                        <li class="filter" data-role="button" data-filter=".for-commercial">For Commercial</li>
+                        <li class="filter" data-role="button" data-filter=".for-residential">For Residential</li>
                     </ul>
                 </div>
 
                 <div class="filter-list row clearfix">
-
+                @foreach($properties->slice(0, 9) as $property)
                     <!--Property Box Two-->
-                    <div class="property-box-two mix all for-rent col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="property"><img width="360" height="240"
-                                                                              src="{{asset('images/resource/featured-image-11.jpg')}}"
-                                                                              alt=""></a>
-                                </figure>
-                                <div class="prop-cat rent-cat">For Rent</div>
-                            </div>
-                            <div class="lower-content">
-                                <div class="property-title">
-                                    <h3><a href="property">146 Liverpool Street</a></h3>
-                                    <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater
-                                        Manchester.
+                        <div class="property-box-two mix all for-{{$property->type}} col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><a href="{{$property->path()}}"><img width="360" height="240"
+                                                                                  src="{{asset('images/resource/'.$property->images)}}"
+                                                                                  alt=""></a>
+                                    </figure>
+                                    <div class="prop-cat {{$property->type}}-cat">{{$property->type}}</div>
+                                </div>
+                                <div class="lower-content">
+                                    <div class="property-title">
+                                        <h3><a href="{{$property->path()}}">{{$property->address}}</a></h3>
+                                        <div class="location"><span class="fa fa-map-marker"></span>&nbsp; {{$property->postcode}} {{$property->city}} {{$property->state}}
+                                        </div>
+                                    </div>
+                                    <div class="prop-info">
+                                        <ul class="clearfix">
+                                            <li><strong>{{$property->bedroom}}</strong> Beds</li>
+                                            <li><strong>{{$property->bathroom}}</strong> Baths</li>
+                                            <li><strong>{{$property->area}}</strong> sq ft.</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="prop-info">
-                                    <ul class="clearfix">
-                                        <li><strong>4</strong> Beds</li>
-                                        <li><strong>3</strong> Baths</li>
-                                        <li><strong>3542</strong> sq ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="price-discount clearfix">
-                                    <div class="price"><strong>$1600</strong>Asking Price</div>
-                                    <div class="discount"><strong>19%</strong>Bellow Market Value</div>
-                                </div>
-                                <div class="link"><a href="property">View Details <span
-                                                class="fa fa-angle-right"></span></a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Property Box Two-->
-                    <div class="property-box-two mix all for-sell col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="property"><img width="360" height="240"
-                                                                              src="{{asset('images/resource/featured-image-12.jpg')}}"
-                                                                              alt=""></a>
-                                </figure>
-                                <div class="prop-cat sell-cat">For Sell</div>
-                            </div>
-                            <div class="lower-content">
-                                <div class="property-title">
-                                    <h3><a href="property">146 Liverpool Street</a></h3>
-                                    <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater
-                                        London.
+                                <div class="bottom-content">
+                                    <div class="price-discount clearfix">
+                                        <div class="price"><strong>&pound;{{$property->price}}</strong>Asking Price</div>
+                                        <div class="discount"><strong>{{$property->bathroom+10 /*random for testing*/}}%</strong>Bellow Market Value</div>
                                     </div>
+                                    <div class="link"><a href="{{$property->path()}}">View Details <span
+                                                    class="fa fa-angle-right"></span></a></div>
                                 </div>
-                                <div class="prop-info">
-                                    <ul class="clearfix">
-                                        <li><strong>4</strong> Beds</li>
-                                        <li><strong>3</strong> Baths</li>
-                                        <li><strong>3542</strong> sq ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="price-discount clearfix">
-                                    <div class="price"><strong>$165,000</strong>Asking Price</div>
-                                    <div class="discount"><strong>19%</strong>Bellow Market Value</div>
-                                </div>
-                                <div class="link"><a href="property">View Details <span
-                                                class="fa fa-angle-right"></span></a></div>
                             </div>
                         </div>
-                    </div>
-
-                    <!--Property Box Two-->
-                    <div class="property-box-two mix all for-rent col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="property"><img width="360" height="240"
-                                                                              src="{{asset('images/resource/featured-image-13.jpg')}}"
-                                                                              alt=""></a>
-                                </figure>
-                                <div class="prop-cat rent-cat">For Rent</div>
-                            </div>
-                            <div class="lower-content">
-                                <div class="property-title">
-                                    <h3><a href="property">146 Liverpool Street</a></h3>
-                                    <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater
-                                        Manchester.
-                                    </div>
-                                </div>
-                                <div class="prop-info">
-                                    <ul class="clearfix">
-                                        <li><strong>4</strong> Beds</li>
-                                        <li><strong>3</strong> Baths</li>
-                                        <li><strong>3542</strong> sq ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="price-discount clearfix">
-                                    <div class="price"><strong>$1500</strong>Asking Price</div>
-                                    <div class="discount"><strong>19%</strong>Bellow Market Value</div>
-                                </div>
-                                <div class="link"><a href="property">View Details <span
-                                                class="fa fa-angle-right"></span></a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Property Box Two-->
-                    <div class="property-box-two mix all for-sell col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="property"><img width="360" height="240"
-                                                                              src="{{asset('images/resource/featured-image-14.jpg')}}"
-                                                                              alt=""></a>
-                                </figure>
-                                <div class="prop-cat sell-cat">For Sell</div>
-                            </div>
-                            <div class="lower-content">
-                                <div class="property-title">
-                                    <h3><a href="property">146 Liverpool Street</a></h3>
-                                    <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater
-                                        London.
-                                    </div>
-                                </div>
-                                <div class="prop-info">
-                                    <ul class="clearfix">
-                                        <li><strong>4</strong> Beds</li>
-                                        <li><strong>3</strong> Baths</li>
-                                        <li><strong>3542</strong> sq ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="price-discount clearfix">
-                                    <div class="price"><strong>$165,000</strong>Asking Price</div>
-                                    <div class="discount"><strong>19%</strong>Bellow Market Value</div>
-                                </div>
-                                <div class="link"><a href="property">View Details <span
-                                                class="fa fa-angle-right"></span></a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Property Box Two-->
-                    <div class="property-box-two mix all for-rent col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="property"><img width="360" height="240"
-                                                                              src="{{asset('images/resource/featured-image-15.jpg')}}"
-                                                                              alt=""></a>
-                                </figure>
-                                <div class="prop-cat rent-cat">For Rent</div>
-                            </div>
-                            <div class="lower-content">
-                                <div class="property-title">
-                                    <h3><a href="property">146 Liverpool Street</a></h3>
-                                    <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater
-                                        Manchester.
-                                    </div>
-                                </div>
-                                <div class="prop-info">
-                                    <ul class="clearfix">
-                                        <li><strong>4</strong> Beds</li>
-                                        <li><strong>3</strong> Baths</li>
-                                        <li><strong>3542</strong> sq ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="price-discount clearfix">
-                                    <div class="price"><strong>$1000</strong>Asking Price</div>
-                                    <div class="discount"><strong>19%</strong>Bellow Market Value</div>
-                                </div>
-                                <div class="link"><a href="property">View Details <span
-                                                class="fa fa-angle-right"></span></a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Property Box Two-->
-                    <div class="property-box-two mix all for-sell col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="property"><img width="360" height="240"
-                                                                              src="{{asset('images/resource/featured-image-16.jpg')}}"
-                                                                              alt=""></a>
-                                </figure>
-                                <div class="prop-cat sell-cat">For Sell</div>
-                            </div>
-                            <div class="lower-content">
-                                <div class="property-title">
-                                    <h3><a href="property">146 Liverpool Street</a></h3>
-                                    <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 Greater
-                                        London.
-                                    </div>
-                                </div>
-                                <div class="prop-info">
-                                    <ul class="clearfix">
-                                        <li><strong>4</strong> Beds</li>
-                                        <li><strong>3</strong> Baths</li>
-                                        <li><strong>3542</strong> sq ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="price-discount clearfix">
-                                    <div class="price"><strong>$165,000</strong>Asking Price</div>
-                                    <div class="discount"><strong>19%</strong>Bellow Market Value</div>
-                                </div>
-                                <div class="link"><a href="property">View Details <span
-                                                class="fa fa-angle-right"></span></a></div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
 
 
                 </div>
@@ -408,156 +228,35 @@
 
             <div class="carousel-outer">
                 <div class="testimonial-carousel-one single-item-carousel owl-theme owl-carousel">
+                @foreach($testimonials as $testimonial)
                     <!--Slide Item-->
-                    <div class="slide-item">
-                        <div class="slide-inner">
-                            <div class="clearfix">
-                                <!--Image Column-->
-                                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img width="570" height="503"
-                                                               src="{{asset('images/resource/featured-image-10.jpg')}}"
-                                                               alt="">
-                                    </figure>
-                                </div>
-                                <!--Content Column-->
-                                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                                    <div class="inner">
-                                        <div class="icon"></div>
-                                        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit
-                                            voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim
-                                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                            consequuntur magni.
-                                        </div>
-                                        <div class="author-info">
-                                            <h4>Shah Paran</h4>
-                                            <div class="designation">Manager @<a href="#">Reki Housing</a></div>
+                        <div class="slide-item">
+                            <div class="slide-inner">
+                                <div class="clearfix">
+                                    <!--Image Column-->
+                                    <div class="image-column col-md-3 col-sm-12 col-xs-12">
+                                        <figure class="image"><img width="570" height="503"
+                                                                   src="{{asset('images/resource/'.$testimonial->media)}}"
+                                                                   alt="">
+                                        </figure>
+                                    </div>
+                                    <!--Content Column-->
+                                    <div class="content-column col-md-9 col-sm-12 col-xs-12">
+                                        <div class="inner">
+                                            <div class="icon"></div>
+                                            <div class="slide-text">{{$testimonial->testimonial}}
+                                            </div>
+                                            <div class="author-info">
+                                                <h4>{{$testimonial->name}}</h4>
+                                                <div class="designation">{{$testimonial->designation}} @<a
+                                                            href="#"> {{$testimonial->company}}</a></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!--Slide Item-->
-                    <div class="slide-item">
-                        <div class="slide-inner">
-                            <div class="clearfix">
-                                <!--Image Column-->
-                                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img width="570" height="503"
-                                                               src="{{asset('images/resource/featured-image-10.jpg')}}"
-                                                               alt="">
-                                    </figure>
-                                </div>
-                                <!--Content Column-->
-                                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                                    <div class="inner">
-                                        <div class="icon"></div>
-                                        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit
-                                            voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim
-                                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                            consequuntur magni.
-                                        </div>
-                                        <div class="author-info">
-                                            <h4>Shah Paran</h4>
-                                            <div class="designation">Administrator @<a href="#">Reki Housing</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Slide Item-->
-                    <div class="slide-item">
-                        <div class="slide-inner">
-                            <div class="clearfix">
-                                <!--Image Column-->
-                                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img width="570" height="503"
-                                                               src="{{asset('images/resource/featured-image-10.jpg')}}"
-                                                               alt="">
-                                    </figure>
-                                </div>
-                                <!--Content Column-->
-                                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                                    <div class="inner">
-                                        <div class="icon"></div>
-                                        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit
-                                            voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim
-                                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                            consequuntur magni.
-                                        </div>
-                                        <div class="author-info">
-                                            <h4>Shah Paran</h4>
-                                            <div class="designation">Radiologist @<a href="#">Reki Housing</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Slide Item-->
-                    <div class="slide-item">
-                        <div class="slide-inner">
-                            <div class="clearfix">
-                                <!--Image Column-->
-                                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img width="570" height="503"
-                                                               src="{{asset('images/resource/featured-image-10.jpg')}}"
-                                                               alt="">
-                                    </figure>
-                                </div>
-                                <!--Content Column-->
-                                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                                    <div class="inner">
-                                        <div class="icon"></div>
-                                        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit
-                                            voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim
-                                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                            consequuntur magni.
-                                        </div>
-                                        <div class="author-info">
-                                            <h4>Shah Paran</h4>
-                                            <div class="designation">Senior Engineer @<a href="#">Reki Housing</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Slide Item-->
-                    <div class="slide-item">
-                        <div class="slide-inner">
-                            <div class="clearfix">
-                                <!--Image Column-->
-                                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                    <figure class="image"><img width="570" height="503"
-                                                               src="{{asset('images/resource/featured-image-10.jpg')}}"
-                                                               alt="">
-                                    </figure>
-                                </div>
-                                <!--Content Column-->
-                                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                                    <div class="inner">
-                                        <div class="icon"></div>
-                                        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit
-                                            voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim
-                                            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                            consequuntur magni.
-                                        </div>
-                                        <div class="author-info">
-                                            <h4>Shah Paran</h4>
-                                            <div class="designation">Doctor @<a href="#">Reki Housing</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    @endforeach
                 </div>
             </div>
 

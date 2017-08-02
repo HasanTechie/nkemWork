@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {   return view('index');   });
+Route::get('/', 'IndexController@index' );
 Route::get('/aboutus', function () {   return view('aboutus');   });
 
 Route::get('/contactus', function () {   return view('contactus');   });
@@ -31,4 +31,4 @@ Route::get('/addproperty', function () {   return view('addproperty');   });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
