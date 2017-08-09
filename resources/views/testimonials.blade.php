@@ -1,4 +1,4 @@
-@extends('layouts/master')
+@extends('publiclayouts/master')
 
 @section('content')
 
@@ -44,5 +44,5 @@
         </div>
     </section>
     <hr>
-    @include('layouts/subscribe-section')
+    @include('publiclayouts/subscribe-section')
 @endsection

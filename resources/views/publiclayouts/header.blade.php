@@ -5,7 +5,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>ukeandcs.com</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Stylesheets -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">

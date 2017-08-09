@@ -1,4 +1,4 @@
-@extends('layouts/master')
+@extends('publiclayouts/master')
 
 @section('content')
     <!--Inner Page Banner-->
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-@include('layouts/partner-section')
-@include('layouts/subscribe-section')
+@include('publiclayouts/partner-section')
+@include('publiclayouts/subscribe-section')
 
 @endsection

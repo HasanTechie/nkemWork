@@ -1,4 +1,4 @@
-@extends('layouts/master')
+@extends('publiclayouts/master')
 
 @section('content')
     <!--Inner Page Banner-->

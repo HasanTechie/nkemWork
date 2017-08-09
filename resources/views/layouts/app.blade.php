@@ -12,8 +12,16 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/myapp.css') }}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
+    @if($flash = session('message'))
+        <div id="flash-message" class="alert alert-success alert-dismissable">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+            <strong>Success!</strong> {{$flash}}
+        </div>
+    @endif
 <div id="app">
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
@@ -37,7 +45,25 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    &nbsp;
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">UKeandcs<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="{{route('createproperty')}}">Add Property</a>
+                            </li>
+                            <li>
+                                <a href="{{route('allproperties')}}">View Properties</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="{{route('createtestimonial')}}">Add Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="{{route('alltestimonials')}}">View Testimonials</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -45,7 +71,6 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"

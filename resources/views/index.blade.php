@@ -1,4 +1,4 @@
-@extends('layouts/master')
+@extends('publiclayouts/master')
 
 @section('content')
 
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    @include('layouts/subscribe-section')
+    @include('publiclayouts/subscribe-section')
 
     <!--Popular Places-->
     <section class="popular-places style-two">
@@ -263,6 +263,6 @@
         </div>
     </section>
     <br/>
-    @include('layouts/partner-section')
+    @include('publiclayouts/partner-section')
 
 @endsection

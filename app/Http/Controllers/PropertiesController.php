@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class PropertiesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->only('create');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -20,6 +24,13 @@ class PropertiesController extends Controller
         return view('properties.index', compact('properties'));
     }
 
+    public function all(){
+
+        $properties = Property::latest()->get();
+
+        return view('layouts.properties.index', compact('properties'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -28,6 +39,7 @@ class PropertiesController extends Controller
     public function create()
     {
         //
+        return view('layouts.properties.create');
     }
 
     /**
@@ -39,6 +51,21 @@ class PropertiesController extends Controller
     public function store(Request $request)
     {
         //
+        $property = Property::create([
+            'user_id' => auth()->id(),
+            'title' => request('name'),
+            'price' => request('price'),
+            'city' => request('city'),
+            'state' => request('state'),
+            'media' => request('image'),
+        ]);
+
+        if ($property->exists) {
+            session()->flash('message', 'Property created Successfully');
+        }
+
+//        return redirect($thread->path());
+        return back();
     }
 
     /**
@@ -85,5 +112,10 @@ class PropertiesController extends Controller
     public function destroy(Property $property)
     {
         //
+        $property->delete();
+        if (!($property->exists)) {
+            session()->flash('message', 'Property Deleted Successfully');
+        }
+        return back();
     }
 }

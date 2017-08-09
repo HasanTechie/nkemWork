@@ -22,13 +22,25 @@ Route::post('/businessrates', function () {   return view('businessrates');   })
 
 Route::get('/properties', 'PropertiesController@index');
 Route::post('/properties', 'PropertiesController@index');
-
 Route::get('/properties/{property}', 'PropertiesController@show');
 
 Route::get('/testimonials', 'TestimonialsController@index');
 
-Route::get('/addproperty', function () {   return view('addproperty');   });
+
+
+Route::get('/createproperty', 'PropertiesController@create')->name('createproperty');
+Route::post('/createproperty', 'PropertiesController@store')->name('createproperty');
+Route::get('/allproperties', 'PropertiesController@all')->name('allproperties');
+Route::delete('/allproperties/{property}', 'PropertiesController@destroy');
+
+Route::get('/createtestimonial', 'TestimonialsController@create')->name('createtestimonial');
+Route::post('/createtestimonial', 'TestimonialsController@store')->name('createtestimonial');
+Route::get('/alltestimonials', 'TestimonialsController@all')->name('alltestimonials');
+Route::delete('/alltestimonials/{testimonial}', 'TestimonialsController@destroy');
+
+
 
 Auth::routes();
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/register', 'AdminController@index')->name('admin');
