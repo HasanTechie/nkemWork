@@ -12,8 +12,8 @@
                             <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Name</th>
-                                <th>Testimonial</th>
+                                <th>Title</th>
+                                <th>Details</th>
                                 <th>Delete</th>
                             </tr>
                             </thead>

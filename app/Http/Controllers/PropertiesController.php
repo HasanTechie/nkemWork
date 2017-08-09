@@ -9,7 +9,7 @@ class PropertiesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->only('create');
+        $this->middleware('auth')->except('index','show');
     }
     /**
      * Display a listing of the resource.
@@ -53,11 +53,32 @@ class PropertiesController extends Controller
         //
         $property = Property::create([
             'user_id' => auth()->id(),
-            'title' => request('name'),
-            'price' => request('price'),
+            'title' => request('title'),
+            'price' => (int) request('price'),
+            'status' => 'sale',
+            'type' => 'commercial',
+            'address' => 'test',
+            'postcode' => 'test',
+            'description' => 'test',
+            'area' => (int) '1',
+            'bedroom' => (int) '1',
+            'kitchen' => (int) '1',
+            'bathroom' => (int) '1',
+            'dinningroom' => (int) '1',
+            'drawingroom' => (int) '1',
+            'garage' => (int) '1',
+            'swimmingpool' => (int) '1',
+            'gym' => (int) '1',
+            'firesafety' => (int) '1',
+            'garden' => (int) '1',
+            'guesthouse' => (int) '1',
+            'centralheating' => (int) '1',
+            'phone' => (int) '1',
+            'name' => 'test',
+            'email' => 'test@test.com',
             'city' => request('city'),
             'state' => request('state'),
-            'media' => request('image'),
+            'images' => request('image'),
         ]);
 
         if ($property->exists) {
