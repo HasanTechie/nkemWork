@@ -75,7 +75,7 @@
                 @foreach($properties->slice(0, 9) as $property)
                     @if($imageArray = explode(",", $property->images))
                         <!--Property Box Two-->
-                            <div class="property-box-two mix all for-{{$property->type}} col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="property-box-two mix all for-{{strtolower($property->type)}} col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="inner-box">
                                     <div class="image-box">
                                         <figure class="image"><a href="{{$property->path()}}"><img
@@ -83,7 +83,7 @@
                                                         title="{{$property->title}}"
                                                         src="{{Storage::url($imageArray[0] )}}" alt=""></a>
                                         </figure>
-                                        <div class="prop-cat {{$property->type}}-cat">{{$property->type}}</div>
+                                        <div class="prop-cat {{strtolower($property->type)}}-cat">{{$property->type}}</div>
                                     </div>
                                     <div class="lower-content">
                                         <div class="property-title">
