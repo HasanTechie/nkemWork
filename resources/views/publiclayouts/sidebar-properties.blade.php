@@ -4,12 +4,10 @@
     @foreach($properties as $property)
         @if($imageArray = explode(",", $property->images))
             <div class="post">
-                <figure class="image"><a href="{{$property->path()}}"><img
+                <figure class="post-thumb"><a href="{{$property->path()}}"><img
                                 style="display: block; max-width: 80px; min-width: 80px; max-height: 80px; min-height: 80px;"
                                 title="{{$property->title}}"
                                 src="{{Storage::url($imageArray[0] )}}" alt=""></a>
-                </figure>
-                <figure class="post-thumb"><a href="#"><img src="{{ asset('images/resource/post-thumb-6.jpg')}}" alt=""></a>
                 </figure>
                 <h4><a href="#">{{$property->address}}</a></h4>
                 <ul class="specs clearfix">
