@@ -159,7 +159,7 @@
                             <div class="widget-inner">
                                 <div class="default-form quote-form">
                                     <h4>Request A Quote</h4>
-                                    <form method="post" action="contactus">
+                                    <form method="post" action="{{ url('/contactus') }}">
                                         {{ csrf_field() }}
                                         <div class="form-group">
                                             <input type="text" name="field-name" value="" placeholder="Name" required>

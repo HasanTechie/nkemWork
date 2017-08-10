@@ -34,7 +34,7 @@
                 great price on property deals.
             </div>
 
-            <form method="post" action="contactus">
+            <form method="post" action="{{ url('/contactus') }}">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <input type="email" name="text" value="" placeholder="Enter Your Email" required>

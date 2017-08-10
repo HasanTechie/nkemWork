@@ -36,7 +36,7 @@
 
                 <!--Logo Box-->
                 <div class="logo-box">
-                    <div class="logo"><a href="/" title="Ukeandcs"><img width="140" height="80" src="{{ asset('images/logo.png')}}"
+                    <div class="logo"><a href="{{ url('/') }}" title="Ukeandcs"><img width="140" height="80" src="{{ asset('images/logo.png')}}"
                                                                         alt="Ukeandcs" title="Ukeandcs"></a></div>
                 </div>
 
