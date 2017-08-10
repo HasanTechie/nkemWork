@@ -73,13 +73,15 @@
 
                 <div class="filter-list row clearfix">
                 @foreach($properties->slice(0, 9) as $property)
+                    @if($imageArray = explode(",", $property->images))
                     <!--Property Box Two-->
                         <div class="property-box-two mix all for-{{$property->type}} col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><a href="{{$property->path()}}"><img width="360" height="240"
-                                                                                  src="{{asset('images/resource/'.$property->images)}}"
-                                                                                  alt=""></a>
+                                    <figure class="image"><a href="{{$property->path()}}"><img
+                                                    style="display: block; max-width: 360px; min-width: 360px; max-height: 240px; min-height: 240px;"
+                                                    title="{{$property->title}}"
+                                                    src="{{Storage::url($imageArray[0] )}}" alt=""></a>
                                     </figure>
                                     <div class="prop-cat {{$property->type}}-cat">{{$property->type}}</div>
                                 </div>
@@ -100,7 +102,7 @@
                                 <div class="bottom-content">
                                     <div class="price-discount clearfix">
                                         <div class="price"><strong>&pound;{{$property->price}}</strong>Asking Price</div>
-                                        <div class="discount"><strong>{{$property->bathroom+10 /*random for testing*/}}%</strong>Bellow Market Value</div>
+                                        <div class="discount"><strong>{{$property->bathroom+5 /*random for testing*/}}%</strong>Bellow Market Value</div>
                                     </div>
                                     <div class="link"><a href="{{$property->path()}}">View Details <span
                                                     class="fa fa-angle-right"></span></a></div>
@@ -235,8 +237,8 @@
                                 <div class="clearfix">
                                     <!--Image Column-->
                                     <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                        <figure class="image"><img width="570" height="503"
-                                                                   src="{{asset('images/resource/'.$testimonial->media)}}"
+                                        <figure class="image"><img style="display: block; max-width: 570px; min-width: 570px; max-height: 503px; min-height: 503px;"
+                                                                   src="{{Storage::url($testimonial->media)}}"
                                                                    alt="">
                                         </figure>
                                     </div>
