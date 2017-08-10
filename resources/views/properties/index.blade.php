@@ -1,4 +1,4 @@
-@extends('layouts/master')
+@extends('publiclayouts/master')
 
 @section('content')
     <!--Inner Page Banner-->
@@ -71,54 +71,68 @@
 
                     <div class="listing">
                         @foreach($properties as $property)
+                            @if($imageArray = explode(",", $property->images))
 
-                            <div class="default-property-box list-view">
-                                <div class="inner-box clearfix">
-                                    <!--Image Column-->
-                                    <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="image-box">
-                                            <figure class="image"><a href="{{$property->path()}}"><img src="{{asset('images/resource/'.$property->images)}}" alt=""></a></figure>
-                                            <div class="property-price">&pound;{{$property->price}}</div>
+                                <div class="default-property-box list-view">
+                                    <div class="inner-box clearfix">
+                                        <!--Image Column-->
+                                        <div class="image-column col-md-6 col-sm-6 col-xs-12">
+                                            <div class="image-box">
+                                                <figure class="image"><a href="{{$property->path()}}"><img
+                                                                style="display: block; max-width: 360px; min-width: 360px; max-height: 240px; min-height: 240px;"
+                                                                title="{{$property->title}}"
+                                                                src="{{Storage::url($imageArray[0] )}}" alt=""></a>
+                                                </figure>
+                                                <div class="property-price">&pound;{{$property->price}}</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--Content Column-->
-                                    <div class="content-column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="lower-content">
-                                            <div class="property-title">
-                                                <h3><a href="{{$property->path()}}">{{$property->address}}</a></h3>
-                                                <div class="location"><span class="fa fa-map-marker"></span>&nbsp; {{$property->postcode}} {{$property->city}} {{$property->state}}.</div>
-                                            </div>
-                                            <div class="prop-info clearfix">
-                                                <div class="prop-for"><span class="for">For {{$property->type}}</span><span class="area">{{$property->area}} sq ft.</span></div>
-                                                <div class="link-box"><a href="{{$property->path()}}" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                                            </div>
-                                            <div class="property-meta">
-                                                <ul class="clearfix">
-                                                    <li><span class="icon fa fa-user"></span> {{$property->name}}</li>
-                                                    <li><span class="icon fa fa-calendar"></span> {{$property->created_at->diffForHumans()}}</li>
-                                                    <li class="options">&ensp; </li>
-                                                </ul>
+                                        <!--Content Column-->
+                                        <div class="content-column col-md-6 col-sm-6 col-xs-12">
+                                            <div class="lower-content">
+                                                <div class="property-title">
+                                                    <h3><a href="{{$property->path()}}">{{$property->address}}</a></h3>
+                                                    <div class="location"><span
+                                                                class="fa fa-map-marker"></span>&nbsp; {{$property->postcode}} {{$property->city}} {{$property->state}}
+                                                        .
+                                                    </div>
+                                                </div>
+                                                <div class="prop-info clearfix">
+                                                    <div class="prop-for"><span
+                                                                class="for">For {{$property->type}}</span><span
+                                                                class="area">{{$property->area}} sq ft.</span></div>
+                                                    <div class="link-box"><a href="{{$property->path()}}"
+                                                                             class="theme-btn">View Details <span
+                                                                    class="fa fa-angle-right"></span></a></div>
+                                                </div>
+                                                <div class="property-meta">
+                                                    <ul class="clearfix">
+                                                        <li><span class="icon fa fa-user"></span> {{$property->name}}
+                                                        </li>
+                                                        <li>
+                                                            <span class="icon fa fa-calendar"></span> {{$property->created_at->diffForHumans()}}
+                                                        </li>
+                                                        <li class="options">&ensp;</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
+                            @endif
                         @endforeach
 
 
-
                     </div>
 
-                    <!-- Styled Pagination -->
-                    <div class="styled-pagination">
-                        <ul>
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#" class="next">Next</a></li>
-                        </ul>
-                    </div>
+                    {{--<!-- Styled Pagination -->--}}
+                    {{--<div class="styled-pagination">--}}
+                        {{--<ul>--}}
+                            {{--<li><a href="#" class="active">1</a></li>--}}
+                            {{--<li><a href="#">2</a></li>--}}
+                            {{--<li><a href="#">3</a></li>--}}
+                            {{--<li><a href="#" class="next">Next</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</div>--}}
                 </div>
 
                 <!--Search Form Column-->
@@ -146,7 +160,8 @@
                                             <div class="slider-header">
                                                 <div class="clearfix">
                                                     <div class="title">Area Range (sq ft):</div>
-                                                    <div class="input"><input type="text" class="area-size" name="field-name" readonly></div>
+                                                    <div class="input"><input type="text" class="area-size"
+                                                                              name="field-name" readonly></div>
                                                 </div>
                                             </div>
 
@@ -161,7 +176,8 @@
                                             <div class="slider-header">
                                                 <div class="clearfix">
                                                     <div class="title">Price Range (&pound;):</div>
-                                                    <div class="input"><input type="text" class="property-amount" name="field-name" readonly></div>
+                                                    <div class="input"><input type="text" class="property-amount"
+                                                                              name="field-name" readonly></div>
                                                 </div>
                                             </div>
 
@@ -265,5 +281,5 @@
         </div>
     </section>
 
-    @include('layouts/subscribe-section')
+    @include('publiclayouts/subscribe-section')
 @endsection

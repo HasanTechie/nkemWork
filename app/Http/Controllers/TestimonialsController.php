@@ -55,13 +55,14 @@ class TestimonialsController extends Controller
     public function store(Request $request)
     {
         //
+        $filename = $request->image->store('public/testimonials');
         $testimonial = Testimonial::create([
             'user_id' => auth()->id(),
             'name' => request('name'),
             'designation' => request('designation'),
             'company' => request('company'),
             'testimonial' => request('testimonial'),
-            'media' => request('image'),
+            'media' => $filename,
         ]);
 
         if ($testimonial->exists) {

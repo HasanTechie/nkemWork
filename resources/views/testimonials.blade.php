@@ -17,8 +17,8 @@
                                 <div class="clearfix">
                                     <!--Image Column-->
                                     <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                                        <figure class="image"><img width="570" height="503"
-                                                                   src="{{asset('images/resource/'.$testimonial->media)}}"
+                                        <figure class="image"><img style="display: block; max-width: 570px; min-width: 570px; max-height: 503px; min-height: 503px;"
+                                                                   src="{{Storage::url($testimonial->media)}}"
                                                                    alt="">
                                         </figure>
                                     </div>

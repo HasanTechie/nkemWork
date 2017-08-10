@@ -20,7 +20,7 @@ class CreateTestimonialsTable extends Migration
             $table->string('designation');
             $table->string('company');
             $table->string('testimonial');
-            $table->string('media');
+            $table->text('media');
             $table->timestamps();
         });
     }

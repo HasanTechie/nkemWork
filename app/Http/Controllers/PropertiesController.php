@@ -51,34 +51,39 @@ class PropertiesController extends Controller
     public function store(Request $request)
     {
         //
+        $filenames = "";
+        foreach ($request->images as $image) {
+            $filenames .= $image->store('public/properties') . ',';
+        }
+
         $property = Property::create([
             'user_id' => auth()->id(),
             'title' => request('title'),
             'price' => (int) request('price'),
-            'status' => 'sale',
-            'type' => 'commercial',
-            'address' => 'test',
-            'postcode' => 'test',
-            'description' => 'test',
-            'area' => (int) '1',
-            'bedroom' => (int) '1',
-            'kitchen' => (int) '1',
-            'bathroom' => (int) '1',
-            'dinningroom' => (int) '1',
-            'drawingroom' => (int) '1',
-            'garage' => (int) '1',
-            'swimmingpool' => (int) '1',
-            'gym' => (int) '1',
-            'firesafety' => (int) '1',
-            'garden' => (int) '1',
-            'guesthouse' => (int) '1',
-            'centralheating' => (int) '1',
-            'phone' => (int) '1',
-            'name' => 'test',
-            'email' => 'test@test.com',
-            'city' => request('city'),
+            'status' => request('status'),
+            'type' => request('type'),
+            'address' => request('address'),
             'state' => request('state'),
-            'images' => request('image'),
+            'city' => request('city'),
+            'postcode' => request('postcode'),
+            'description' => request('description'),
+            'area' => (int) request('area'),
+            'bedroom' => (int) request('bedroom'),
+            'kitchen' => (int) request('kitchen'),
+            'bathroom' => (int) request('bathroom'),
+            'dinningroom' => (int) request('dinningroom'),
+            'drawingroom' => (int) request('drawingroom'),
+            'garage' => (int) request('garage'),
+            'swimmingpool' => (int) $request->input('swimmingpool'),
+            'gym' => (int) $request->input('gym'),
+            'firesafety' => (int) $request->input('firesafety'),
+            'garden' => (int) $request->input('garden'),
+            'guesthouse' => (int) $request->input('guesthouse'),
+            'centralheating' => (int) $request->input('centralheating'),
+            'phone' => request('phone'),
+            'name' => request('name'),
+            'email' => request('email'),
+            'images' => $filenames
         ]);
 
         if ($property->exists) {
@@ -98,7 +103,8 @@ class PropertiesController extends Controller
     public function show(Property $property)
     {
         //
-        return view('properties.show', compact('property'));
+        $imageArray = explode(",", $property->images);
+        return view('properties.show', compact('property','imageArray'));
     }
 
     /**

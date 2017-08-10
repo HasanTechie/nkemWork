@@ -8,7 +8,7 @@
                     <div class="panel-heading"><h2 align="center">Add Testimonial</h2></div>
                     <div class="panel-body">
 
-                        <form class="form-horizontal" method="POST" action="{{ route('createtestimonial') }}">
+                        <form class="form-horizontal" method="POST" action="{{ route('createtestimonial') }}" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -70,8 +70,9 @@
                                 <label for="image" class="col-md-4 control-label">Image</label>
 
                                 <div class="col-md-6">
-                                    <input id="image" type="text" class="form-control" name="image"
-                                           value="{{ old('image') }}" required autofocus>
+                                    <input id="image" name="image" class="form-control" type="file">
+                                    {{--<input id="image" type="text" class="form-control" name="image"--}}
+                                    {{--value="{{ old('image') }}" required autofocus>--}}
                                     @if ($errors->has('image'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('image') }}</strong>
