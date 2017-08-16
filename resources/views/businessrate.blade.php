@@ -12,7 +12,7 @@
         </div>
     </section>
 
-    <div class="sidebar-page-container">
+    <div class="sidebar-page-container" style="padding-bottom: 0; margin-bottom: 0;">
         <div class="auto-container">
             <div class="row clearfix">
 
@@ -88,16 +88,13 @@
                             </div>
                         </div>
                     </section>
-
-
                 </div>
                 <!--Content Side-->
-
             </div>
         </div>
     </div>
     <!--Contact Section-->
-    <div class="contact-section">
+    <div class="contact-section" style="padding-top: 0;">
         <div class="auto-container">
             <div class="outer-box clearfix">
 
