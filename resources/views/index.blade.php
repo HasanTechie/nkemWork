@@ -32,7 +32,6 @@
                                             <option>Property Type</option>
                                             <option>Residential</option>
                                             <option>Commercial</option>
-                                            <option>Castle</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6 col-sm-4 col-xs-12">

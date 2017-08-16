@@ -45,17 +45,6 @@
                                             <select class="custom-select-box">
                                                 <option>Newest Item</option>
                                                 <option>By Price</option>
-                                                <option>By Ratings</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="option-box">
-                                        <div class="sel-label">View</div>
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>List</option>
-                                                <option>Grid</option>
                                             </select>
                                         </div>
                                     </div>
@@ -64,7 +53,7 @@
                         </div>
                         <!--Count Column-->
                         <div class="count-column">
-                            <div class="count">42 homes found</div>
+                            <div class="count">2 homes found</div>
                         </div>
 
                     </div>

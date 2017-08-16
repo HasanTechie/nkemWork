@@ -59,7 +59,7 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
-                                <label for="price" class="col-md-4 control-label">Price</label>
+                                <label for="price" class="col-md-4 control-label">Price in &pound;</label>
 
                                 <div class="col-md-6">
                                     <input id="price" type="number" class="form-control" name="price"

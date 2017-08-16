@@ -15,7 +15,9 @@ Route::get('/', 'IndexController@index' );
 Route::get('/aboutus', function () {   return view('aboutus');   });
 
 Route::get('/contactus', function () {   return view('contactus');   });
-Route::post('/contactus', function () {   return view('contactus');   });
+
+Route::post('/contactus', 'MailsController@contactus');
+Route::post('/requestquote', 'MailsController@requestquote');
 
 Route::get('/businessrates', function () {   return view('businessrates');   });
 Route::post('/businessrates', function () {   return view('businessrates');   });
@@ -25,8 +27,6 @@ Route::post('/properties', 'PropertiesController@index');
 Route::get('/properties/{property}', 'PropertiesController@show');
 
 Route::get('/testimonials', 'TestimonialsController@index');
-
-
 
 Route::get('/createproperty', 'PropertiesController@create')->name('createproperty');
 Route::post('/createproperty', 'PropertiesController@store')->name('createproperty');

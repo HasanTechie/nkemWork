@@ -7,7 +7,7 @@
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2 style="color:white">Property Details</h2>
-                <div class="text">Reprehenderit in voluptate velit esse cillum dolore.</div>
+                <div class="text">Helping you make the Right Move.</div>
             </div>
         </div>
     </section>
@@ -37,14 +37,17 @@
                             <!--Product image Carousel-->
                             <ul class="prod-image-carousel owl-theme owl-carousel">
                                 @foreach($imageArray as $image)
-                                    <li>
-                                        <figure class="image">
-                                            <a class="lightbox-image option-btn" data-fancybox-group="example-gallery"
-                                               href="{{Storage::url($image )}}" title="{{$property->title}}"><img
-                                                        style="display: block; max-width: 770px; min-width: 770px; max-height: 400px; min-height: 400px;"
-                                                        src="{{Storage::url($image )}}" alt=""></a>
-                                        </figure>
-                                    </li>
+                                    @if(!empty($image))
+                                        <li>
+                                            <figure class="image">
+                                                <a class="lightbox-image option-btn"
+                                                   data-fancybox-group="example-gallery"
+                                                   href="{{Storage::url($image )}}" title="{{$property->title}}"><img
+                                                            style="display: block; max-width: 770px; min-width: 770px; max-height: 400px; min-height: 400px;"
+                                                            src="{{Storage::url($image)}}" alt=""></a>
+                                            </figure>
+                                        </li>
+                                    @endif
                                 @endforeach
                             </ul>
 
@@ -159,16 +162,24 @@
                             <div class="widget-inner">
                                 <div class="default-form quote-form">
                                     <h4>Request A Quote</h4>
-                                    <form method="post" action="{{ url('/contactus') }}">
+                                    @if($flash = session('message'))
+                                        <div id="flash-message" class="alert alert-success alert-dismissable">
+                                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                            <strong>Success!</strong> {{$flash}}
+                                        </div>
+                                    @endif
+                                    <form method="post" action="{{ url('/requestquote') }}">
                                         {{ csrf_field() }}
                                         <div class="form-group">
-                                            <input type="text" name="field-name" value="" placeholder="Name" required>
+                                            <input type="text" name="name" value="" placeholder="Name" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="field-name" value="" placeholder="Email" required>
+                                            <input type="email" name="email" value="" placeholder="Email" required>
                                         </div>
+                                        <input type="hidden" name="propertyid" value="{{$property->id}}">
+                                        <input type="hidden" name="propertytitle" value="{{$property->title}}">
                                         <div class="form-group">
-                                            <textarea name="field-name" placeholder="Message" required></textarea>
+                                            <textarea name="message" placeholder="Message" required></textarea>
                                         </div>
                                         <div class="button-group">
                                             <button type="submit" class="theme-btn btn-style-one">Send Message</button>
