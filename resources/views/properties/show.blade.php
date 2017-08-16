@@ -23,10 +23,10 @@
                     <!--Property DEtails-->
                     <section class="property-details">
                         <div class="prop-header">
-                            <h3>{{$property->address}} <span class="prop-label">For {{$property->type}}</span></h3>
+                            <h3>{{$property->title}} <span class="prop-label">For {{$property->type}}</span></h3>
                             <div class="info clearfix">
                                 <div class="location"><span
-                                            class="fa fa-map-marker"></span>&ensp; {{$property->postcode}} {{$property->city}} {{$property->state}}
+                                            class="fa fa-map-marker"></span>{{$property->address}}, {{$property->postcode}}, {{$property->city}}, {{$property->state}}
                                 </div>
                             </div>
                         </div>
