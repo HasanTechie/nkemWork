@@ -24,11 +24,17 @@
                         <div class="title"><h2>Send Us Message</h2></div>
                         <!-- Contact Form -->
                         <div class="contact-form">
-                            <form method="post" id="contact-form" action="">
+                            @if($flash = session('message'))
+                                <div id="flash-message" class="alert alert-success alert-dismissable">
+                                    <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                                    <strong>Success!</strong> {{$flash}}
+                                </div>
+                            @endif
+                            <form method="post" id="contact-form" action="{{ url('/businessrate') }}">
                                 {{ csrf_field() }}
                                 <div class="row clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <input type="text" name="username" placeholder="Name" required>
+                                        <input type="text" name="name" placeholder="Name" required>
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
@@ -48,11 +54,11 @@
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <input type="text" name="rateable" placeholder="Rateable Value" required>
+                                        <input type="text" name="rateablevalue" placeholder="Rateable Value" required>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
-                                        <textarea name="message" placeholder="Message"></textarea>
+                                        <textarea name="message" placeholder="Message" required></textarea>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
