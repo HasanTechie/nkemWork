@@ -91,6 +91,11 @@
                                         <div class="icon"><span class="flaticon-copy"></span></div> {{$property->area}}
                                         sq ft
                                     </li>
+                                    <li>
+                                        <div class="icon"><span class="flaticon-private-garage"></span></div>
+                                        {{$property->garage}} Garage
+                                    </li>
+
                                 </ul>
                             </div>
                             <!--Other Features-->

@@ -14,6 +14,7 @@
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Testimonial</th>
+                                <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
                             </thead>
@@ -23,6 +24,11 @@
                                     <td>{{$testimonial->id}}</td>
                                     <td>{{$testimonial->name}}</td>
                                     <td>{{$testimonial->testimonial}}</td>
+                                    <td>
+                                        <a href="/alltestimonials/{{$testimonial->id}}/edit"><i style="color:green"
+                                                                                           class="fa fa-pencil-square-o fa-2x"
+                                                                                           aria-hidden="true"></i></a>
+                                    </td>
                                     <td>
                                         <form action="/alltestimonials/{{ $testimonial->id }}" method="POST">
                                             {{ csrf_field() }}

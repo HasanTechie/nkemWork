@@ -93,6 +93,7 @@ class TestimonialsController extends Controller
     public function edit(Testimonial $testimonial)
     {
         //
+        return view('layouts.testimonials.edit', compact('testimonial'));
     }
 
     /**
@@ -105,6 +106,15 @@ class TestimonialsController extends Controller
     public function update(Request $request, Testimonial $testimonial)
     {
         //
+        $testimonial->update([
+            'name' => request('name'),
+            'designation' => request('designation'),
+            'company' => request('company'),
+            'testimonial' => request('testimonial')
+        ]);
+        session()->flash('message', 'Testimonials Details Updated Successfully');
+
+        return back();
     }
 
     /**

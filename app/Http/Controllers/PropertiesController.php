@@ -9,8 +9,9 @@ class PropertiesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('index','show');
+        $this->middleware('auth')->except('index', 'show');
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -24,7 +25,8 @@ class PropertiesController extends Controller
         return view('properties.index', compact('properties'));
     }
 
-    public function all(){
+    public function all()
+    {
 
         $properties = Property::latest()->get();
 
@@ -45,7 +47,7 @@ class PropertiesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -59,7 +61,7 @@ class PropertiesController extends Controller
         $property = Property::create([
             'user_id' => auth()->id(),
             'title' => request('title'),
-            'price' => (int) request('price'),
+            'price' => (int)request('price'),
             'status' => request('status'),
             'type' => request('type'),
             'address' => request('address'),
@@ -68,19 +70,19 @@ class PropertiesController extends Controller
             'postcode' => request('postcode'),
             'description' => request('description'),
             'fulldescription' => base64_encode(request('fulldescription')),
-            'area' => (int) request('area'),
-            'bedroom' => (int) request('bedroom'),
-            'kitchen' => (int) request('kitchen'),
-            'bathroom' => (int) request('bathroom'),
-            'dinningroom' => (int) request('dinningroom'),
-            'drawingroom' => (int) request('drawingroom'),
-            'garage' => (int) request('garage'),
-            'swimmingpool' => (int) $request->input('swimmingpool'),
-            'gym' => (int) $request->input('gym'),
-            'firesafety' => (int) $request->input('firesafety'),
-            'garden' => (int) $request->input('garden'),
-            'guesthouse' => (int) $request->input('guesthouse'),
-            'centralheating' => (int) $request->input('centralheating'),
+            'area' => (int)request('area'),
+            'bedroom' => (int)request('bedroom'),
+            'kitchen' => (int)request('kitchen'),
+            'bathroom' => (int)request('bathroom'),
+            'dinningroom' => (int)request('dinningroom'),
+            'drawingroom' => (int)request('drawingroom'),
+            'garage' => (int)request('garage'),
+            'swimmingpool' => (int)$request->input('swimmingpool'),
+            'gym' => (int)$request->input('gym'),
+            'firesafety' => (int)$request->input('firesafety'),
+            'garden' => (int)$request->input('garden'),
+            'guesthouse' => (int)$request->input('guesthouse'),
+            'centralheating' => (int)$request->input('centralheating'),
             'phone' => request('phone'),
             'name' => request('name'),
             'email' => request('email'),
@@ -98,43 +100,75 @@ class PropertiesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Property  $property
+     * @param  \App\Property $property
      * @return \Illuminate\Http\Response
      */
     public function show(Property $property)
     {
         //
         $imageArray = explode(",", $property->images);
-        return view('properties.show', compact('property','imageArray'));
+        return view('properties.show', compact('property', 'imageArray'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Property  $property
+     * @param  \App\Property $property
      * @return \Illuminate\Http\Response
      */
     public function edit(Property $property)
     {
         //
+        return view('layouts.properties.edit', compact('property'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Property  $property
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Property $property
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Property $property)
     {
         //
+        $property->update([
+            'title' => request('title'),
+            'price' => (int)request('price'),
+            'status' => request('status'),
+            'type' => request('type'),
+            'address' => request('address'),
+            'state' => request('state'),
+            'city' => request('city'),
+            'postcode' => request('postcode'),
+            'description' => request('description'),
+            'fulldescription' => base64_encode(request('fulldescription')),
+            'area' => (int)request('area'),
+            'bedroom' => (int)request('bedroom'),
+            'kitchen' => (int)request('kitchen'),
+            'bathroom' => (int)request('bathroom'),
+            'dinningroom' => (int)request('dinningroom'),
+            'drawingroom' => (int)request('drawingroom'),
+            'garage' => (int)request('garage'),
+            'swimmingpool' => (int)$request->input('swimmingpool'),
+            'gym' => (int)$request->input('gym'),
+            'firesafety' => (int)$request->input('firesafety'),
+            'garden' => (int)$request->input('garden'),
+            'guesthouse' => (int)$request->input('guesthouse'),
+            'centralheating' => (int)$request->input('centralheating'),
+            'phone' => request('phone'),
+            'name' => request('name'),
+            'email' => request('email')
+        ]);
+        session()->flash('message', 'Property Details Updated Successfully');
+
+        return back();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Property  $property
+     * @param  \App\Property $property
      * @return \Illuminate\Http\Response
      */
     public function destroy(Property $property)
