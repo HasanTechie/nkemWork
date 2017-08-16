@@ -6,22 +6,108 @@
              style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2 style="color:white">Get Business Rates</h2>
-                <div class="text">Claim your business rates refunds and / reductions with "No Win NO Fee"</div>
+                <div class="text">Have You Been Paying More Business Rates Than You Should Be?</div>
+                <h2 style="color:white">“No Win No Fee”</h2>
             </div>
         </div>
     </section>
 
+    <div class="sidebar-page-container">
+        <div class="auto-container">
+            <div class="row clearfix">
 
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <section class="blog blog-details">
+
+                        <!--News Block-->
+                        <div class="news-style-one">
+                            <div class="inner-box">
+                                <div class="lower-content">
+                                    <h3>Helping you make the right Move</h3>
+                                    <div class="text">
+                                        <h3>About Us</h3>
+                                        <p>Welcome to UK Estate & Consultancy Services. We provide Residential &
+                                            Commercial sales, letting & management. Furthermore, we challenge and
+                                            represent landlords and tenants with their business rates matters.</p>
+                                        <h3>2017 Revaluation</h3>
+                                        <p>The UK Valuation Office Agency completed last valuation on 2010 and supposed
+                                            to complete current revaluation on 2015, however, it was delayed two years
+                                            and revaluation completed in 2017 and it came into force on 1 April 2017.
+                                            Business properties will be valued as at from 1 April 2015 and believed to
+                                            be reflecting changes in the market since 2010. Additionally, according to
+                                            many sources and current dealing with our clients particularly in London and
+                                            the South East the rate bill has been increased substantially. As a result
+                                            businesses are facing exceptionally hardship to maintain with their rates
+                                            payment. However, although an appeal still can be lodged, however, the
+                                            government introduced a new system that makes more difficult in procedure
+                                            and prolong time consuming in dealing with appeal cases.</p>
+                                        <p>The new introduced system known as; “Check, Challenge, Appeal. The new
+                                            system, procedure and complexity of the changes it has become necessary to
+                                            seek professional’s advice from Chartered Surveyor who can deal and
+                                            represent with your business rates appeal. Furthermore, business rates bill
+                                            for next year expected to increase, however, we can calculate this now and
+                                            determine as to what would be rises.</p>
+                                        <h3>Our Services</h3>
+                                        <p>Our experienced Chartered Surveyor shall advise and deal with Business Rates
+                                            Refunds & / Reductions. We will make an Application for Refunds and
+                                            Overpayment, Rates Relief & File an Appeal Application. In addition, our
+                                            Surveyor also deal and challenges unfair business lease terms and rent
+                                            increases.
+                                        <p>
+                                            The 2017 revaluation reflected substantial rises and planned to even
+                                            increases further. Due to the procedural changes dealing with business rates
+                                            matters are becoming more complex and its implications affected many
+                                            businesses seriously and additionally puts more financial burden on almost
+                                            all businesses.
+                                        </p>
+                                        <p>
+                                            However, on receipt of basic information from you as listed below, our
+                                            experienced Chartered Surveyor can advise landlords and business and
+                                            immediately can give an opinion on the case, have you been paying more
+                                            business rates than you should be?. Subsequently, we can lodge an appeal to
+                                            the rates authority and reduced in some cases by up to 100%. In order to
+                                            proceed with an appeal, in some cases we will need to visit you business
+                                            property. It all depends on the balance of probability whether an appeal is
+                                            likely to be worthwhile.
+                                        </p>
+                                        <h3>Fees</h3>
+                                        <p>Our primary advice is free of charge basis and we do not take an upfront
+                                            fees, this is our promise. We will only take our fees on success of the
+                                            case.
+                                            We deal with, No Win No Fee(s) basis Means; we shall not charge any fee(s)
+                                            should the case be unsuccessful. Our fee charges are comparably less than
+                                            other competitors. However, we do not compromise to continue to provide
+                                            quality services to our prospective clients. Our fees charge are based on a
+                                            percentage of the saving made. Every individual case will require different
+                                            level of services, accordingly we shall discuss and determine the fee
+                                            charge. We shall provide a contract when both parties are satisfied to
+                                            proceed with the casework.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <!--Content Side-->
+
+            </div>
+        </div>
+    </div>
     <!--Contact Section-->
     <div class="contact-section">
         <div class="auto-container">
             <div class="outer-box clearfix">
 
+
                 <!--Form Column-->
                 <div class="form-column col-md-8 col-sm-12 col-xs-12">
                     <div class="inner">
-                        <div class="title"><h2>Send Us Message</h2></div>
+                        <div class="title"><h2>Initial Information Required</h2></div>
+                        <p>In order to assess you business rate, kindly provide requested information as below and estimate to respond to you and give our opinion within same day</p>
+                        <br>
                         <!-- Contact Form -->
                         <div class="contact-form">
                             @if($flash = session('message'))
