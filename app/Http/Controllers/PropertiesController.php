@@ -67,6 +67,7 @@ class PropertiesController extends Controller
             'city' => request('city'),
             'postcode' => request('postcode'),
             'description' => request('description'),
+            'fulldescription' => base64_encode(request('fulldescription')),
             'area' => (int) request('area'),
             'bedroom' => (int) request('bedroom'),
             'kitchen' => (int) request('kitchen'),

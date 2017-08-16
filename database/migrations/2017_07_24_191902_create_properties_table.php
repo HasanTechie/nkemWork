@@ -27,6 +27,7 @@ class CreatePropertiesTable extends Migration
             $table->string('city');
             $table->string('postcode');
             $table->text('description');
+            $table->longText('fulldescription');
             $table->integer('bedroom');
             $table->integer('kitchen');
             $table->integer('bathroom');

@@ -143,7 +143,7 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
-                                <label for="description" class="col-md-4 control-label">Description</label>
+                                <label for="description" class="col-md-4 control-label">Short Description</label>
 
                                 <div class="col-md-6">
                                     <textarea name="description" id="description" cols="30" rows="10"
@@ -309,6 +309,23 @@
                                     @if ($errors->has('images'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('images') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('fulldescription') ? ' has-error' : '' }}">
+                                <label for="fulldescription" class="col-md-4 control-label">Full Description</label>
+
+                                <div class="col-md-6">
+                                    <textarea id="fulldescription" class="ckeditor" name="fulldescription">{{ old('fulldescription') }}</textarea>
+                                    {{--<textarea name="fulldescription" id="fulldescription" cols="30" rows="10"--}}
+                                              {{--class="form-control">{{ old('fulldescription') }}</textarea>--}}
+                                    <small style="color: darksalmon;">(You can add embedded Images/Videos/Audios in Full Description)
+                                    </small>
+                                    @if ($errors->has('fulldescription'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('fulldescription') }}</strong>
                                         </span>
                                     @endif
                                 </div>

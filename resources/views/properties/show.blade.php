@@ -115,6 +115,11 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="text-content">
+                                {!!(base64_decode($property->fulldescription))!!}
+                            </div>
+
                             {{--<!--Floor Plans-->--}}
                             {{--<div class="floor-plans">--}}
                             {{--<div class="medium-title"><h3>Explore Floor Plan</h3></div>--}}
