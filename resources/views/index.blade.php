@@ -146,7 +146,7 @@
                                                            alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>North London</h4>
-                                    <div class="count">24 Properties</div>
+                                    <div class="count"></div>
                                 </div>
                             </div>
                             <a href="{{ url('/properties') }}" class="link-overlay"></a>
@@ -161,7 +161,7 @@
                                                            alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>Central London</h4>
-                                    <div class="count">24 Properties</div>
+                                    <div class="count"></div>
                                 </div>
                             </div>
                             <a href="{{ url('/properties') }}" class="link-overlay"></a>
@@ -181,7 +181,7 @@
                                     </figure>
                                     <div class="overlay-content">
                                         <h4>South London</h4>
-                                        <div class="count">24 Properties</div>
+                                        <div class="count"></div>
                                     </div>
                                 </div>
                                 <a href="{{ url('/properties') }}" class="link-overlay"></a>
@@ -197,7 +197,7 @@
                                     </figure>
                                     <div class="overlay-content">
                                         <h4>East London</h4>
-                                        <div class="count">24 Properties</div>
+                                        <div class="count"></div>
                                     </div>
                                 </div>
                                 <a href="{{ url('/properties') }}" class="link-overlay"></a>
@@ -213,7 +213,7 @@
                                                            alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>West London</h4>
-                                    <div class="count">24 Properties</div>
+                                    <div class="count"></div>
                                 </div>
                             </div>
                             <a href="{{ url('/properties') }}" class="link-overlay"></a>
