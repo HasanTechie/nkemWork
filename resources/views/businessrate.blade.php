@@ -6,7 +6,7 @@
              style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
-                <div class="text">Have You Been Paying More Business Rates Than You Should Be?</div>
+                <div class="text"><b>Have You Been Paying More Business Rates Than You Should Be?</b></div>
                 <h2 style="color:white">“No Win No Fee”</h2>
             </div>
         </div>
@@ -103,7 +103,8 @@
                 <div class="form-column col-md-8 col-sm-12 col-xs-12">
                     <div class="inner">
                         <div class="title"><h2>Initial Information Required</h2></div>
-                        <p>In order to assess you business rate, kindly provide requested information as below and estimate to respond to you and give our opinion within same day</p>
+                        <p>In order to assess and calculate your business rate, kindly provide requested information as
+                            below and estimate to respond to you and give our opinion within same day</p>
                         <br>
                         <!-- Contact Form -->
                         <div class="contact-form">
@@ -129,15 +130,20 @@
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <input type="text" name="company" placeholder="Company Name" required>
-                                    </div>
-
-                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                                         <input type="text" name="postcode" placeholder="PostCode" required>
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group">
-                                        <input type="text" name="rateablevalue" placeholder="Rateable Value" required>
+                                        <input type="text" name="annualrate" placeholder="Annual Rate (&pound;)"
+                                               required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="ratebill" placeholder="Rate bill 2017/2018" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="baddress" placeholder="Business Address" required>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
@@ -198,8 +204,8 @@
         <div class="map-box">
             <!--Map Canvas-->
             <div class="map-canvas"
-                 data-zoom="8"
-                 data-lat="51.510110"
+                 data-zoom="10"
+                 data-lat="51.495110"
                  data-lng="-0.135132"
                  data-type="roadmap"
                  data-hue="#ffc400"

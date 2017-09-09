@@ -8,10 +8,10 @@
 
         <ul class="sponsors-carousel owl-theme owl-carousel">
             <li>
-                <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/2.png')}}" alt=""></a></figure>
+                <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/1.png')}}" alt=""></a></figure>
             </li>
             <li>
-                <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/1.png')}}" alt=""></a></figure>
+                <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/2.png')}}" alt=""></a></figure>
             </li>
             <li>
                 <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/3.png')}}" alt=""></a></figure>
@@ -20,6 +20,9 @@
                 <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/4.png')}}" alt=""></a></figure>
             </li>
             <li>
+                <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/5.png')}}" alt=""></a></figure>
+            </li>
+            <li>
                 <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/2.png')}}" alt=""></a></figure>
             </li>
             <li>
@@ -27,6 +30,9 @@
             </li>
             <li>
                 <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/3.png')}}" alt=""></a></figure>
+            </li>
+            <li>
+                <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/5.png')}}" alt=""></a></figure>
             </li>
             <li>
                 <figure class="image"><a href="#"><img width="200" height="80" src="{{asset('images/sponsors/4.png')}}" alt=""></a></figure>

@@ -49,9 +49,10 @@ class MailsController extends Controller
             'name'=> 'required',
             'email'=> 'required',
             'phone'=> 'required',
-            'company'=> 'required',
+            'baddress'=> 'required',
             'postcode'=> 'required',
-            'rateablevalue'=> 'required',
+            'annualrate'=> 'required',
+            'ratebill'=> 'required',
             'message'=> 'required'
         ]);
 

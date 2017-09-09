@@ -5,7 +5,7 @@
     <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
-                <h2 style="color:white">About UKeandcs</h2>
+                <h2 style="color:white">About Us</h2>
                 <div class="text">Helping you make the right Move</div>
             </div>
         </div>
@@ -24,9 +24,9 @@
                         <!--News Block-->
                         <div class="news-style-one">
                             <div class="inner-box">
-                                <figure class="image-box"><img src="images/resource/blog-image-12.jpg" alt=""></figure>
+                                {{--<figure class="image-box"><img src="images/resource/blog-image-12.jpg" alt=""></figure>--}}
                                 <div class="lower-content">
-                                    <div class="post-meta">12 July 2017 By Admin</div>
+                                    <div class="post-meta">02 Sep 2017 By Admin</div>
                                     <h3>Helping you make the right Move</h3>
                                     <div class="text">
                                         <p>UK Estate has established in 2016 and we are located heart of East London, close to Docklands and Tower Bridge. We are regulated by Property Ombudsman as well as client deposit scheme.  We are also insured with professional liabilities insurance.  You can relay on our code of conducts and we uphold the regulatoriess’ terms & conditions.</p>

@@ -5,7 +5,7 @@
     <section class="inner-page-banner" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
         <div class="auto-container">
             <h1>Search Your Home</h1>
-            <div class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+            <div class="text">will be Helping you make the right move.</div>
 
             <div class="banner-form-box medium">
                 <div class="default-form">

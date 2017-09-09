@@ -17,7 +17,7 @@
         <div class="banner-search-container">
             <div class="form-outer">
                 <div class="banner-search-form">
-                    <h1>Find your dream home just in a click</h1>
+                    <h1>To all Landlords, We require all sizes of properties<br/> urgently for our potential Buyers and Tenants</h1>
                     <div class="text">Claim your business rates refunds and / reductions with
                         “No Win NO Fee”
                     </div>
@@ -145,11 +145,11 @@
                                                            src="{{asset('images/resource/featured-image-17.jpg')}}"
                                                            alt=""></figure>
                                 <div class="overlay-content">
-                                    <h4>London</h4>
+                                    <h4>North London</h4>
                                     <div class="count">24 Properties</div>
                                 </div>
                             </div>
-                            <a href="#" class="link-overlay"></a>
+                            <a href="{{ url('/properties') }}" class="link-overlay"></a>
                         </div>
                     </div>
                     <!--Popular Place Box-->
@@ -160,11 +160,11 @@
                                                            src="{{asset('images/resource/featured-image-20.jpg')}}"
                                                            alt=""></figure>
                                 <div class="overlay-content">
-                                    <h4>Liverpool</h4>
+                                    <h4>Central London</h4>
                                     <div class="count">24 Properties</div>
                                 </div>
                             </div>
-                            <a href="#" class="link-overlay"></a>
+                            <a href="{{ url('/properties') }}" class="link-overlay"></a>
                         </div>
                     </div>
                 </div>
@@ -180,11 +180,11 @@
                                                                alt="">
                                     </figure>
                                     <div class="overlay-content">
-                                        <h4>Manchester</h4>
+                                        <h4>South London</h4>
                                         <div class="count">24 Properties</div>
                                     </div>
                                 </div>
-                                <a href="#" class="link-overlay"></a>
+                                <a href="{{ url('/properties') }}" class="link-overlay"></a>
                             </div>
                         </div>
                         <!--Popular Place Box-->
@@ -196,11 +196,11 @@
                                                                alt="">
                                     </figure>
                                     <div class="overlay-content">
-                                        <h4>Leeds</h4>
+                                        <h4>East London</h4>
                                         <div class="count">24 Properties</div>
                                     </div>
                                 </div>
-                                <a href="#" class="link-overlay"></a>
+                                <a href="{{ url('/properties') }}" class="link-overlay"></a>
                             </div>
                         </div>
                     </div>
@@ -212,11 +212,11 @@
                                                            src="{{asset('images/resource/featured-image-21.jpg')}}"
                                                            alt=""></figure>
                                 <div class="overlay-content">
-                                    <h4>Glasgow</h4>
+                                    <h4>West London</h4>
                                     <div class="count">24 Properties</div>
                                 </div>
                             </div>
-                            <a href="#" class="link-overlay"></a>
+                            <a href="{{ url('/properties') }}" class="link-overlay"></a>
                         </div>
                     </div>
                 </div>
