@@ -2,7 +2,7 @@
 
 @section('content')
     <!--Inner Page Banner-->
-    <section class="inner-page-banner" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
+    <section class="inner-page-banner" style="background-image:url({{asset('images/background/bg-page-title-property.jpg')}});">
         <div class="auto-container">
             <h1>Search Your Home</h1>
             <div class="text">will be Helping you make the right move.</div>

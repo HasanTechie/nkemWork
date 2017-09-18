@@ -3,7 +3,7 @@
 @section('content')
     <!--Inner Page Banner-->
     <section class="inner-page-banner style-two"
-             style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
+             style="background-image:url({{asset('images/background/bg-page-title-business.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
                 <div class="text"><b>Have You Been Paying More Business Rates Than You Should Be?</b></div>
