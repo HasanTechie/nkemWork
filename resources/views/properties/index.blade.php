@@ -12,7 +12,16 @@
                     <form method="post" action="properties">
                         {{ csrf_field() }}
                         <div class="row clearfix">
-                            <div class="form-group col-md-9 col-sm-8 col-xs-12">
+                            <div class="form-group col-md-3 col-sm-4 col-xs-12">
+                                <select class="custom-select-box">
+                                    <option>Property Type</option>
+                                    <option>Buy</option>
+                                    <option>Sell</option>
+                                    <option>Let</option>
+                                    <option>Rent</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-4 col-xs-12">
                                 <input type="text" name="field-name" value="" placeholder="Enter Location" required>
                             </div>
                             <div class="form-group col-md-3 col-sm-4 col-xs-12">
