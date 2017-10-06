@@ -140,7 +140,7 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><img width="570" height="350"
-                                                           src="{{asset('images/resource/featured-image-17.jpg')}}"
+                                                           src="{{asset('images/resource/north-london.jpg')}}"
                                                            alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>North London</h4>
@@ -155,7 +155,7 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><img width="570" height="350"
-                                                           src="{{asset('images/resource/featured-image-20.jpg')}}"
+                                                           src="{{asset('images/resource/central-london.jpg')}}"
                                                            alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>Central London</h4>
@@ -174,7 +174,7 @@
                             <div class="inner-box">
                                 <div class="image-box">
                                     <figure class="image"><img width="570" height="350"
-                                                               src="{{asset('images/resource/featured-image-18.jpg')}}"
+                                                               src="{{asset('images/resource/south-london.jpg')}}"
                                                                alt="">
                                     </figure>
                                     <div class="overlay-content">
@@ -190,7 +190,7 @@
                             <div class="inner-box">
                                 <div class="image-box">
                                     <figure class="image"><img width="570" height="350"
-                                                               src="{{asset('images/resource/featured-image-19.jpg')}}"
+                                                               src="{{asset('images/resource/east-london.jpg')}}"
                                                                alt="">
                                     </figure>
                                     <div class="overlay-content">
@@ -207,7 +207,7 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><img width="570" height="350"
-                                                           src="{{asset('images/resource/featured-image-21.jpg')}}"
+                                                           src="{{asset('images/resource/west-london.jpg')}}"
                                                            alt=""></figure>
                                 <div class="overlay-content">
                                     <h4>West London</h4>
