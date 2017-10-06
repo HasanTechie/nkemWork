@@ -4,8 +4,8 @@
     <!--Inner Page Banner-->
     <section class="inner-page-banner" style="background-image:url({{asset('images/background/bg-page-title-property.jpg')}});">
         <div class="auto-container">
-            <h1>Search Your Home</h1>
-            <div class="text">will be Helping you make the right move.</div>
+            <h1>COMMERCIAL PROPERTIES</h1>
+            <div class="text">To all Landlords, We require all sizes of properties urgently for our potential Buyers and Tenants</div>
 
             <div class="banner-form-box medium">
                 <div class="default-form">
@@ -53,7 +53,7 @@
                         </div>
                         <!--Count Column-->
                         <div class="count-column">
-                            <div class="count">2 homes found</div>
+                            {{--<div class="count">2 homes found</div>--}}
                         </div>
 
                     </div>
@@ -179,11 +179,11 @@
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="field-label">Location</div>
                                         <select class="custom-select-box">
-                                            <option>All Cities</option>
-                                            <option>Ney York</option>
-                                            <option>Hong Kong</option>
-                                            <option>Islamabad</option>
-                                            <option>Dhaka</option>
+                                            <option>Central London</option>
+                                            <option>North London</option>
+                                            <option>South London</option>
+                                            <option>East London</option>
+                                            <option>West London</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -200,60 +200,18 @@
                                         </select>
                                     </div>
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <div class="field-label">Baths</div>
+                                        <div class="field-label">Type</div>
                                         <select class="custom-select-box">
-                                            <option>All</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3-5</option>
-                                            <option>5-10</option>
+                                            <option>Flat</option>
+                                            <option>House</option>
+                                            <option>Maisonette</option>
+                                            <option>Detached</option>
+                                            <option>Semi Detached</option>
+                                            <option>Bungalow</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="separator"></div>
-                                    </div>
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="field-label">Additional Features</div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-1">
-                                            <label for="cbox-1">Swimming Pool</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-2">
-                                            <label for="cbox-2">Air Conditioning</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-3">
-                                            <label for="cbox-3">Laundry Room</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-4">
-                                            <label for="cbox-4">Gym</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-5">
-                                            <label for="cbox-5">Central Heating</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-6">
-                                            <label for="cbox-6">Fire Safty</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-7">
-                                            <label for="cbox-7">Window Cinvering</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-8">
-                                            <label for="cbox-8">Alarm</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-9">
-                                            <label for="cbox-9">Garden</label>
-                                        </div>
-                                        <div class="check-box">
-                                            <input type="checkbox" id="cbox-10">
-                                            <label for="cbox-10">Guest House</label>
-                                        </div>
                                     </div>
 
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">

@@ -26,6 +26,7 @@ Route::post('/properties', 'PropertiesController@index');
 Route::get('/properties/{property}', 'PropertiesController@show');
 
 Route::get('/testimonials', 'TestimonialsController@index');
+Route::get('/test', function () {   return view('test');   }); /*test*/
 
 Route::get('/createproperty', 'PropertiesController@create')->name('createproperty');
 Route::post('/createproperty', 'PropertiesController@store')->name('createproperty');

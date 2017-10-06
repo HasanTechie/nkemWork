@@ -198,21 +198,4 @@
         </div>
     </div>
 
-    <!--Map Section-->
-    <section class="map-section">
-        <!--Map Box-->
-        <div class="map-box">
-            <!--Map Canvas-->
-            <div class="map-canvas"
-                 data-zoom="10"
-                 data-lat="51.495110"
-                 data-lng="-0.135132"
-                 data-type="roadmap"
-                 data-hue="#ffc400"
-                 data-title="ukeandcs.com"
-                 data-content="London ABC Street 3000, United Kingdom<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
-            </div>
-        </div>
-    </section>
-
 @endsection

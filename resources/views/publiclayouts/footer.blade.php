@@ -13,9 +13,7 @@
                                 <div class="logo"><a href="/"><img width="140" height="40" src="{{ asset('images/footer-logo.png')}}"
                                                                    alt=""></a></div>
                                 <div class="widget-content">
-                                    <div class="text">UK Estate has established in 2016 and we are located heart of East
-                                        London, close to Docklands and Tower Bridge. We are regulated by Property
-                                        Ombudsman as well as client deposit scheme.
+                                    <div class="text">UK Estate is located in the heart of East London, close to Docklands and Tower Bridge. We are regulated by Property Ombudsman as well as The Client Deposit Scheme.
                                     </div>
                                     <div class="copyright-text">&copy; Ukeandcs 2017, All Rights Reserved.</div>
                                 </div>

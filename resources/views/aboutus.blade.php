@@ -2,7 +2,7 @@
 
 @section('content')
     <!--Inner Page Banner-->
-    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
+    <section class="inner-page-banner style-two" style="background-image:url({{asset('images/background/bg-page-title-old.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2 style="color:white">About Us</h2>

@@ -17,10 +17,8 @@
         <div class="banner-search-container">
             <div class="form-outer">
                 <div class="banner-search-form">
-                    <h1>To all Landlords, We require all sizes of properties<br/> urgently for our potential Buyers and Tenants</h1>
-                    <div class="text">Claim your business rates refunds and / reductions with
-                        “No Win NO Fee”
-                    </div>
+                    <h1>Welcome to UK Estate and Consultancy Services</h1>
+                    <div class="text">"Helping you make the right move"</div>
 
                     <div class="banner-form-box">
                         <div class="default-form">
