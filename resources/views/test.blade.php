@@ -1,11 +1,11 @@
 <?php
-$amount = 398;
+$amount = 1000;
 $initialAmount = $amount;
 $winAverage =0.8;
 $lossAverage = -1;
-$initialI = 664;
+$initialI = 13713;
 //$initialI = 141*4.2;
-$dividedBy = 20;
+$dividedBy = 50;
 $chances = array($winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$winAverage,$lossAverage,$lossAverage,$lossAverage,$lossAverage,$lossAverage,$lossAverage,$lossAverage,$lossAverage);
 //echo $amount/50 . 'is';
 //echo $chances[rand(0,4)];

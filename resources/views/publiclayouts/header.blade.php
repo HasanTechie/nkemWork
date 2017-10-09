@@ -64,6 +64,13 @@
                             <ul class="navigation clearfix">
                                 <li><a href="{{ url('/') }}">Home</a></li>
                                 <li><a href="{{ url('/properties') }}">Properties</a></li>
+                                <li class="dropdown"><a href="#">Properties</a>
+                                    <ul>
+                                        <li><a href="{{ url('/commercial-properties') }}">Commercial</a></li>
+                                        <li><a href="{{ url('/residential-properties') }}">Residential</a></li>
+                                    </ul>
+                                </li>
+
                                 <li><a href="{{ url('/businessrate') }}">Business Rates</a></li>
                                 <li><a href="{{ url('/testimonials') }}">Testimonials</a></li>
                                 <li><a href="{{ url('/aboutus') }}">About Us</a></li>

@@ -9,7 +9,7 @@ class PropertiesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except('index', 'show');
+        $this->middleware('auth')->except('index', 'showCommercial', 'showResidential', 'show');
     }
 
     /**
@@ -20,9 +20,24 @@ class PropertiesController extends Controller
     public function index()
     {
         //
-        $properties = Property::latest()->get();
+//        $properties = Property::latest()->get();
+//
+//        return view('properties.index', compact('properties'));
+    }
 
-        return view('properties.index', compact('properties'));
+    public function showCommercial()
+    {
+        //
+        $properties = Property::latest()->get()->where('type', 'commercial');
+        return view('properties.commercial.index', compact('properties'));
+    }
+
+    public function showResidential()
+    {
+        //
+        $properties = Property::latest()->get()->where('type', 'residential');
+
+        return view('properties.residential.index', compact('properties'));
     }
 
     public function all()

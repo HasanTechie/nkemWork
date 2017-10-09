@@ -21,8 +21,10 @@ Route::post('/businessrate', 'MailsController@businessrate');
 
 Route::get('/businessrate', function () {   return view('businessrate');   });
 
-Route::get('/properties', 'PropertiesController@index');
-Route::post('/properties', 'PropertiesController@index');
+Route::get('/commercial-properties', 'PropertiesController@showCommercial');
+Route::get('/residential-properties', 'PropertiesController@showResidential');
+Route::post('/commercial-properties', 'PropertiesController@showCommercial');
+Route::post('/residential-properties', 'PropertiesController@showResidential');
 Route::get('/properties/{property}', 'PropertiesController@show');
 
 Route::get('/testimonials', 'TestimonialsController@index');
