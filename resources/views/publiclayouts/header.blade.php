@@ -63,7 +63,6 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                                 <li><a href="{{ url('/') }}">Home</a></li>
-                                <li><a href="{{ url('/properties') }}">Properties</a></li>
                                 <li class="dropdown"><a href="#">Properties</a>
                                     <ul>
                                         <li><a href="{{ url('/commercial-properties') }}">Commercial</a></li>
