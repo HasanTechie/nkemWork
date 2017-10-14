@@ -9,7 +9,7 @@
 
             <div class="banner-form-box medium">
                 <div class="default-form">
-                    <form method="post" action="properties">
+                    <form method="post" action="commercial-properties">
                         {{ csrf_field() }}
                         <div class="row clearfix">
                             <div class="form-group col-md-3 col-sm-4 col-xs-12">
