@@ -22,7 +22,7 @@
 
                     <div class="banner-form-box">
                         <div class="default-form">
-                            <form method="post" action="properties">
+                            <form method="post" action="commercial-properties">
                                 {{ csrf_field() }}
                                 <div class="row clearfix">
                                     <div class="form-group col-md-3 col-sm-4 col-xs-12">
@@ -117,7 +117,7 @@
 
                 </div>
             </div>
-            <div class="view-all"><a href="properties" class="theme-btn btn-style-two">Explore More Properties</a>
+            <div class="view-all"><a href="{{ url('/commercial-properties') }}" class="theme-btn btn-style-two">Explore More Properties</a>
             </div>
 
         </div>
@@ -147,7 +147,7 @@
                                     <div class="count"></div>
                                 </div>
                             </div>
-                            <a href="{{ url('/properties') }}" class="link-overlay"></a>
+                            <a href="{{ url('/commercial-properties') }}" class="link-overlay"></a>
                         </div>
                     </div>
                     <!--Popular Place Box-->
@@ -162,7 +162,7 @@
                                     <div class="count"></div>
                                 </div>
                             </div>
-                            <a href="{{ url('/properties') }}" class="link-overlay"></a>
+                            <a href="{{ url('/commercial-properties') }}" class="link-overlay"></a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                                         <div class="count"></div>
                                     </div>
                                 </div>
-                                <a href="{{ url('/properties') }}" class="link-overlay"></a>
+                                <a href="{{ url('/commercial-properties') }}" class="link-overlay"></a>
                             </div>
                         </div>
                         <!--Popular Place Box-->
@@ -198,7 +198,7 @@
                                         <div class="count"></div>
                                     </div>
                                 </div>
-                                <a href="{{ url('/properties') }}" class="link-overlay"></a>
+                                <a href="{{ url('/commercial-properties') }}" class="link-overlay"></a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +214,7 @@
                                     <div class="count"></div>
                                 </div>
                             </div>
-                            <a href="{{ url('/properties') }}" class="link-overlay"></a>
+                            <a href="{{ url('/commercial-properties') }}" class="link-overlay"></a>
                         </div>
                     </div>
                 </div>
