@@ -58,6 +58,24 @@
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('subtype') ? ' has-error' : '' }}">
+                                <label for="type" class="col-md-4 control-label">Subtype</label>
+
+                                <div class="col-md-6">
+                                    <select name="subtype" id="subtype" class="form-control" required>
+                                        <option value="Buy">Buy</option>
+                                        <option value="Sell">Sell</option>
+                                        <option value="Rent">Rent</option>
+                                        <option value="Let">Let</option>
+                                    </select>
+                                    @if ($errors->has('subtype'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('subtype') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
                             <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
                                 <label for="price" class="col-md-4 control-label">Price in &pound;</label>
 

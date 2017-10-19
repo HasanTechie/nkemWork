@@ -1,9 +1,9 @@
 <?php
-$amount = 441;
+$amount = 476;
 $initialAmount = $amount;
 $winAverage = 0.8;
 $lossAverage = -1;
-$initialI = 814/2;
+$initialI = round(80*4.28*1);
 //$initialI = 141*4.2;
 $dividedBy = 25;
 $chances = array($winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage);
@@ -22,7 +22,7 @@ $consecutiveArrayData = array();
 for ($i = 0; $i < $initialI; $i++) {
     $index = mt_rand(0, 19);
 //    $multiplier = (floor(((round($amount,2))/$dividedBy)/10))*10; if($multiplier<10){break;} if($multiplier>250){$multiplier=250;}
-//    $multiplier = (round($amount,2)/$dividedBy);if($multiplier<0.5){break;}
+//    $multiplier = (round($amount,2)/$dividedBy);if($multiplier<0.5){break;};if($multiplier>250){$multiplier=250;}
     $multiplier = 10;
     $result = 0;
     if ($chances[$index] == $winAverage) {
@@ -46,17 +46,26 @@ for ($i = 0; $i < $initialI; $i++) {
 //            $martingaleCount = 0;
             $result = $result * ($martingaleCoeff * 2);
             if ($result < 0) {
-//                $martingaleLossCount++;
-            }
-        }
-        if ($martingaleCount == 3) {
-//            $martingaleCount = 0;
-            $result = $result * ($martingaleCoeff * 2 * 2);
-            if ($result < 0) {
                 $martingaleLossCount++;
             }
         }
+        if ($martingaleCount == 3) {
+            $martingaleCount = 0;
+//            $result = $result * ($martingaleCoeff * 2 * 2);
+            if ($result < 0) {
+//                $martingaleLossCount++;
+            }
+        }
+
         if ($martingaleCount == 4) {
+            $martingaleCount = 0;
+//            $result = $result * ($martingaleCoeff * 2 * 2 * 2);
+            if ($result < 0) {
+//                $martingaleLossCount++;
+            }
+        }
+
+        if ($martingaleCount == 5) {
             $martingaleCount = 0;
         }
     }
@@ -86,7 +95,7 @@ for ($i = 0; $i < $initialI; $i++) {
     }
 }
 consecutive($consecutiveArrayData);
-echo 'Trades : ' . ($win + $loss) . ' <br/>MaximumAmount : ' . $max . ' & MinimumAmount : ' . $min . ' <br/>InitialAmount : ' . $initialAmount . '<br/> FinalAmount : ' . round($amount, 2) . '</br>Diff : ' . round(($amount - $initialAmount), 2) . '<br> MartingaleLossCount : ' . $martingaleLossCount . '<br> MartingaleWinPercent : ' . round((((($win + $loss) - $martingaleLossCount)/($win+$loss))*100),2) . '<br> Win : ' . $win . ' & Loss : ' . $loss;
+echo 'Trades : ' . ($win + $loss) . ' <br/>MaximumAmount : ' . round($max, 0) . ' & MinimumAmount : ' . round($min, 0) . ' <br/>InitialAmount : ' . $initialAmount . '<br/> FinalAmount : ' . round($amount, 0) . '</br>Diff : ' . round(($amount - $initialAmount), 0) . '<br> MartingaleLossCount : ' . $martingaleLossCount . '<br> MartingaleWinPercent : ' . round((((($win + $loss) - $martingaleLossCount)/($win+$loss))*100),2) . '<br> Win : ' . $win . ' & Loss : ' . $loss;
 echo '<br/>Win %age : ' . round((($win / ($win + $loss)) * 100), 2) . '<br/><br/>';
 echo $output;
 function consecutive($consecutiveArrayData)
