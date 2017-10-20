@@ -33,9 +33,21 @@
 
                                 <div class="col-md-6">
                                     <select name="status" id="status" class="form-control" required>
-                                        <option value="Rent" @if($property->status == 'Rent') selected @endif>Rent
+                                        <option value="Buy"
+                                                @if($property->status == 'Buy') selected @endif>
+                                            Buy
                                         </option>
-                                        <option value="Sell" @if($property->status == 'Sell') selected @endif>Sell
+                                        <option value="Sell"
+                                                @if($property->status == 'Sell') selected @endif>
+                                            Sell
+                                        </option>
+                                        <option value="Let"
+                                                @if($property->status == 'Let') selected @endif>
+                                            Let
+                                        </option>
+                                        <option value="Rent"
+                                                @if($property->status == 'Rent') selected @endif>
+                                            Rent
                                         </option>
                                     </select>
                                     @if ($errors->has('status'))
@@ -62,36 +74,6 @@
                                     @if ($errors->has('type'))
                                         <span class="help-block">
                                         <strong>{{ $errors->first('type') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group{{ $errors->has('subtype') ? ' has-error' : '' }}">
-                                <label for="type" class="col-md-4 control-label">SubType</label>
-
-                                <div class="col-md-6">
-                                    <select name="subtype" id="subtype" class="form-control" required>
-                                        <option value="Buy"
-                                                @if($property->subtype == 'Buy') selected @endif>
-                                            Buy
-                                        </option>
-                                        <option value="Sell"
-                                                @if($property->subtype == 'Sell') selected @endif>
-                                            Sell
-                                        </option>
-                                        <option value="Let"
-                                                @if($property->subtype == 'Let') selected @endif>
-                                            Let
-                                        </option>
-                                        <option value="Rent"
-                                                @if($property->subtype == 'Rent') selected @endif>
-                                            Rent
-                                        </option>
-                                    </select>
-                                    @if ($errors->has('subtype'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('subtype') }}</strong>
                                         </span>
                                     @endif
                                 </div>

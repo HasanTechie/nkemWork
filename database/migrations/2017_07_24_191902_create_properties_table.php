@@ -19,7 +19,6 @@ class CreatePropertiesTable extends Migration
             $table->string('title');
             $table->string('status');
             $table->string('type');
-            $table->string('subtype');
             $table->integer('price');
             $table->integer('area');
             $table->text('images');
