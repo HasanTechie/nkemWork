@@ -48,15 +48,7 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                @if (Auth::guest())
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">UKeandcs<span
-                                        class="caret"></span>
-                            </a>
-                        </li>
-                    </ul>
-                @else
+                @if (!(Auth::guest()))
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">UKeandcs<span
@@ -79,7 +71,7 @@
                             </ul>
                         </li>
                     </ul>
-            @endif
+                @endif
 
             <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
