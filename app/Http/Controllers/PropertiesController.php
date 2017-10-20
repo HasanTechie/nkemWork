@@ -40,6 +40,11 @@ class PropertiesController extends Controller
         return view('properties.residential.index', compact('properties'));
     }
 
+//    public function showCommercialSingle(Property $property){
+//        $imageArray = explode(",", $property->images);
+//        return view('properties.show', compact('property', 'imageArray'));
+//    }
+
     public function all()
     {
 

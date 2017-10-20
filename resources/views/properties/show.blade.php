@@ -3,7 +3,7 @@
 @section('content')
     <!--Inner Page Banner-->
     <section class="inner-page-banner style-two"
-             style="background-image:url({{asset('images/background/bg-page-title.jpg')}});">
+             style="background-image:url({{asset('images/background/bg-page-title-property.jpg')}});">
         <div class="auto-container">
             <div class="sec-title centered">
                 <h2 style="color:white">Property Details</h2>

@@ -25,7 +25,8 @@ Route::get('/commercial-properties', 'PropertiesController@showCommercial');
 Route::get('/residential-properties', 'PropertiesController@showResidential');
 Route::post('/commercial-properties', 'PropertiesController@showCommercial');
 Route::post('/residential-properties', 'PropertiesController@showResidential');
-Route::get('/properties/{property}', 'PropertiesController@show');
+Route::get('/commercial-properties/{property}', 'PropertiesController@show');
+Route::get('/residential-properties/{property}', 'PropertiesController@show');
 
 Route::get('/testimonials', 'TestimonialsController@index');
 Route::get('/test', function () {   return view('test');   }); /*test*/
