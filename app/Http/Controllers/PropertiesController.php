@@ -28,14 +28,14 @@ class PropertiesController extends Controller
     public function showCommercial()
     {
         //
-        $properties = Property::latest()->get()->where('type', 'commercial');
+        $properties = Property::latest()->get()->where('type', 'Commercial');
         return view('properties.commercial.index', compact('properties'));
     }
 
     public function showResidential()
     {
         //
-        $properties = Property::latest()->get()->where('type', 'residential');
+        $properties = Property::latest()->get()->where('type', 'Residential');
 
         return view('properties.residential.index', compact('properties'));
     }
