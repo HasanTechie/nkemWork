@@ -10,6 +10,6 @@ class Property extends Model
     protected $guarded = [];
 
     public function path(){
-        return '/properties/'.$this->id;
+        return '/'.strtolower($this->type).'-properties/'.$this->id;
     }
 }
