@@ -47,7 +47,7 @@
                             <div class="footer-widget contact-widget">
                                 <h2>Contact Us</h2>
                                 <div class="widget-content">
-                                    <div class="text">Feel free to ger in touch with us via phone or send us a
+                                    <div class="text">Feel free to get in touch with us via phone or send us a
                                         message.
                                     </div>
                                     <ul class="contact-info">
