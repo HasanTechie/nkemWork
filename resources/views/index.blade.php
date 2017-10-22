@@ -9,7 +9,6 @@
             <ul class="banner-slider owl-theme owl-carousel">
                 <li class="slide-item" style="background-image:url({{asset('images/main-slider/1.jpg')}});"></li>
                 <li class="slide-item" style="background-image:url({{asset('images/main-slider/2.jpg')}});"></li>
-                <li class="slide-item" style="background-image:url({{asset('images/main-slider/3.jpg')}});"></li>
             </ul>
         </div>
 
