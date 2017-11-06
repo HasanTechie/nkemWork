@@ -27,11 +27,10 @@
                                 <div class="widget-content">
                                     <ul class="list">
                                         <li><a href="{{ url('/fees') }}">Our Fees</a></li>
-                                        <li><a href="{{ url('/commercial') }}">Commercial Property</a></li>
-                                        <li><a href="{{ url('/residential') }}">Residential Property</a></li>
                                         <li><a href="{{ url('/businessrate') }}">Business Rates</a></li>
                                         <li><a href="{{ url('/testimonials') }}">Testimonials</a></li>
                                         <li><a href="{{ url('/aboutus') }}">About Us</a></li>
+                                        <li><a href="{{ url('/contactus') }}">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
