@@ -98,13 +98,13 @@
         <div class="map-box">
             <!--Map Canvas-->
             <div class="map-canvas"
-                 data-zoom="8"
-                 data-lat="51.510110"
-                 data-lng="-0.135132"
+                 data-zoom="16"
+                 data-lat="51.5139502"
+                 data-lng="-0.0639959"
                  data-type="roadmap"
                  data-hue="#ffc400"
                  data-title="ukeandcs.com"
-                 data-content="London ABC Street 3000, United Kingdom<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                 data-content="167 Cannon St Rd, Whitechapel, London, E1 2LX, UK<br><a href='mailto:info@ukeandcs.com'>info@ukeandcs.com</a>">
             </div>
         </div>
     </section>
