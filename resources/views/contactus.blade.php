@@ -100,7 +100,7 @@
             <div class="map-canvas"
                  data-zoom="16"
                  data-lat="51.5139502"
-                 data-lng="-0.0639959"
+                 data-lng="-0.0632127"
                  data-type="roadmap"
                  data-hue="#ffc400"
                  data-title="ukeandcs.com"
