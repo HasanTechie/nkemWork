@@ -13,6 +13,9 @@
 
 Route::get('/', 'IndexController@index' );
 Route::get('/aboutus', function () {   return view('aboutus');   });
+Route::get('/fees', function () {   return view('fees');   });
+Route::get('/residential', function () {   return view('residential');   });
+Route::get('/commercial', function () {   return view('commercial');   });
 Route::get('/contactus', function () {   return view('contactus');   });
 
 Route::post('/contactus', 'MailsController@contactus');

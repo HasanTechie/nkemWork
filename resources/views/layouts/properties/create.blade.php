@@ -305,7 +305,7 @@
                                 <label for="image" class="col-md-4 control-label">Images of House</label>
 
                                 <div class="col-md-6">
-                                    <input id="images" name="images[]" class="form-control" type="file" multiple>
+                                    <input id="images" name="images[]" class="form-control" type="file" multiple required autofocus>
                                     {{--<input id="image" type="text" class="form-control" name="image"--}}
                                     {{--value="{{ old('image') }}" required autofocus>--}}
                                     @if ($errors->has('images'))
@@ -320,7 +320,7 @@
                                 <label for="fulldescription" class="col-md-4 control-label">Full Description</label>
 
                                 <div class="col-md-6">
-                                    <textarea id="fulldescription" class="ckeditor" name="fulldescription">{{ old('fulldescription') }}</textarea>
+                                    <textarea id="fulldescription" class="ckeditor" name="fulldescription" required autofocus>{{ old('fulldescription') }}</textarea>
                                     {{--<textarea name="fulldescription" id="fulldescription" cols="30" rows="10"--}}
                                               {{--class="form-control">{{ old('fulldescription') }}</textarea>--}}
                                     <small style="color: darksalmon;">(You can add embedded Images/Videos/Audios in Full Description)

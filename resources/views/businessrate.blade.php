@@ -24,13 +24,12 @@
                         <div class="news-style-one">
                             <div class="inner-box">
                                 <div class="lower-content">
-                                    <h3>Helping you make the right Move</h3>
                                     <div class="text">
-                                        <h3>About Us</h3>
+                                        <h2>About Us</h2>
                                         <p>Welcome to UK Estate & Consultancy Services. We provide Residential &
                                             Commercial sales, letting & management. Furthermore, we challenge and
                                             represent landlords and tenants with their business rates matters.</p>
-                                        <h3>2017 Revaluation</h3>
+                                        <h2>2017 Revaluation</h2>
                                         <p>The UK Valuation Office Agency completed last valuation on 2010 and supposed
                                             to complete current revaluation on 2015, however, it was delayed two years
                                             and revaluation completed in 2017 and it came into force on 1 April 2017.
@@ -48,7 +47,7 @@
                                             represent with your business rates appeal. Furthermore, business rates bill
                                             for next year expected to increase, however, we can calculate this now and
                                             determine as to what would be rises.</p>
-                                        <h3>Our Services</h3>
+                                        <h2>Our Services</h2>
                                         <p>Our experienced Chartered Surveyor shall advise and deal with Business Rates
                                             Refunds & / Reductions. We will make an Application for Refunds and
                                             Overpayment, Rates Relief & File an Appeal Application. In addition, our
@@ -71,7 +70,7 @@
                                             property. It all depends on the balance of probability whether an appeal is
                                             likely to be worthwhile.
                                         </p>
-                                        <h3>Fees</h3>
+                                        <h2>Fees</h2>
                                         <p>Our primary advice is free of charge basis and we do not take an upfront
                                             fees, this is our promise. We will only take our fees on success of the
                                             case.
@@ -171,26 +170,22 @@
                         <ul class="contact-info">
                             <li>
                                 <div class="icon-box"><span class="fa fa-map-marker"></span></div>
-                                1234 Liverpool Street. <br>London
+                                UK Estate & Consultancy Services Ltd <br>
+                                167 Cannon Street Road (1st Floor) <br>
+                                London E1 2LX
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-phone"></span></div>
-                                +020 111 234 4567 <br>+020 123 234 4568
+                                020 7481 9777 <br>
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-envelope"></span></div>
-                                support@ukeandcs.com
+                                info@ukeandcs.com
                             </li>
                         </ul>
 
                         <!--Social Links-->
-                        <ul class="social-links clearfix">
-                            <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                        </ul>
+                        @include('publiclayouts/social-section')
                     </div>
                 </div>
 

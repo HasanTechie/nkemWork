@@ -26,7 +26,9 @@
                                 <h2>Quick Links</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="{{ url('/properties') }}">Properties</a></li>
+                                        <li><a href="{{ url('/fees') }}">Our Fees</a></li>
+                                        <li><a href="{{ url('/commercial') }}">Commercial Property</a></li>
+                                        <li><a href="{{ url('/residential') }}">Residential Property</a></li>
                                         <li><a href="{{ url('/businessrate') }}">Business Rates</a></li>
                                         <li><a href="{{ url('/testimonials') }}">Testimonials</a></li>
                                         <li><a href="{{ url('/aboutus') }}">About Us</a></li>
@@ -47,16 +49,20 @@
                             <div class="footer-widget contact-widget">
                                 <h2>Contact Us</h2>
                                 <div class="widget-content">
-                                    <div class="text">Feel free to get in touch with us via phone or send us a
-                                        message.
-                                    </div>
                                     <ul class="contact-info">
                                         <li>
+                                            <div class="icon"><span class="fa fa-map-marker"></span></div>
+                                            UK Estate & Consultancy Services Ltd <br>
+                                            167 Cannon Street Road (1st Floor) <br>
+                                            London E1 2LX
+                                        </li>
+                                        <li>
                                             <div class="icon"><span class="fa fa-envelope-o"></span></div>
-                                            <a href="mailto:info@ukeandcs.com">info@ukeandcs.com</a></li>
+                                            <a href="mailto:info@ukeandcs.com">info@ukeandcs.com</a>
+                                        </li>
                                         <li>
                                             <div class="icon"><span class="fa fa-phone"></span></div>
-                                            +020 111 234 4567
+                                            020 7481 9777
                                         </li>
                                     </ul>
                                 </div>

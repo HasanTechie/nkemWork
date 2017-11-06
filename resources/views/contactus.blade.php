@@ -69,26 +69,22 @@
                         <ul class="contact-info">
                             <li>
                                 <div class="icon-box"><span class="fa fa-map-marker"></span></div>
-                                1234 Liverpool Street. <br>London
+                                UK Estate & Consultancy Services Ltd <br>
+                                167 Cannon Street Road (1st Floor) <br>
+                                London E1 2LX
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-phone"></span></div>
-                                +020 111 234 4567 <br>+020 123 234 4568
+                                020 7481 9777 <br>
                             </li>
                             <li>
                                 <div class="icon-box"><span class="fa fa-envelope"></span></div>
-                                support@ukeandcs.com
+                                info@ukeandcs.com
                             </li>
                         </ul>
 
                         <!--Social Links-->
-                        <ul class="social-links clearfix">
-                            <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                        </ul>
+                        @include('publiclayouts/social-section')
                     </div>
                 </div>
 

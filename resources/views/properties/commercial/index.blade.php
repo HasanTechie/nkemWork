@@ -139,15 +139,17 @@
                         <div class="title-header">Advance Search</div>
 
                         <div class="default-form">
-                            <form method="post" action="properties">
+                            <form method="post" action="commercial-properties">
                                 {{ csrf_field() }}
                                 <div class="row clearfix">
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="field-label">Status</div>
+                                        <div class="field-label">Property Type</div>
                                         <select class="custom-select-box">
-                                            <option>Any Status</option>
-                                            <option>For Rent</option>
-                                            <option>For Sale</option>
+                                            <option>Any Type</option>
+                                            <option>Buy</option>
+                                            <option>Sell</option>
+                                            <option>Let</option>
+                                            <option>Rent</option>
                                         </select>
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -197,27 +199,6 @@
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="separator"></div>
-                                    </div>
-                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <div class="field-label">Beds</div>
-                                        <select class="custom-select-box">
-                                            <option>All</option>
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3-5</option>
-                                            <option>5-10</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <div class="field-label">Type</div>
-                                        <select class="custom-select-box">
-                                            <option>Flat</option>
-                                            <option>House</option>
-                                            <option>Maisonette</option>
-                                            <option>Detached</option>
-                                            <option>Semi Detached</option>
-                                            <option>Bungalow</option>
-                                        </select>
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="separator"></div>
