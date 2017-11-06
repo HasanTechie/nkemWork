@@ -65,8 +65,14 @@
                                 <li><a href="{{ url('/') }}">Home</a></li>
                                 <li class="dropdown"><a href="#">Properties</a>
                                     <ul>
-                                        <li><a href="{{ url('/commercial-properties') }}">Commercial</a></li>
-                                        <li><a href="{{ url('/residential-properties') }}">Residential</a></li>
+                                        <li><a href="{{ url('/commercial') }}">Commercial</a></li>
+                                        <li><a href="{{ url('/residential') }}">Residential</a></li>
+                                        <li class="dropdown"><a href="#">Search Properties</a>
+                                            <ul>
+                                                <li><a href="{{ url('/commercial-properties') }}">Commercial</a></li>
+                                                <li><a href="{{ url('/residential-properties') }}">Residential</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
 
