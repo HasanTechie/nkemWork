@@ -1,11 +1,11 @@
 <?php
-$amount = 476;
+$amount = 40;
 $initialAmount = $amount;
 $winAverage = 0.8;
 $lossAverage = -1;
-$initialI = round(80*4.28*1);
-//$initialI = 141*4.2;
-$dividedBy = 25;
+$initialI = round(80*4.28*5);
+//$initialI = 645;
+$dividedBy = 14;
 $chances = array($winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $winAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage, $lossAverage);
 //echo $amount/50 . 'is';
 //echo $chances[rand(0,4)];
@@ -21,9 +21,11 @@ $output = '';
 $consecutiveArrayData = array();
 for ($i = 0; $i < $initialI; $i++) {
     $index = mt_rand(0, 19);
-//    $multiplier = (floor(((round($amount,2))/$dividedBy)/10))*10; if($multiplier<10){break;} if($multiplier>250){$multiplier=250;}
-//    $multiplier = (round($amount,2)/$dividedBy);if($multiplier<0.5){break;};if($multiplier>250){$multiplier=250;}
-    $multiplier = 10;
+//    $multiplier = (floor(((round($amount,2))/$dividedBy)/10))*10; if($multiplier<10){break;}
+//    $multiplier = (round($amount,2)/$dividedBy);if($multiplier<0.5){break;};
+    $multiplier = (round($amount,2)/$dividedBy);if($multiplier<1){break;};
+//    if($multiplier>250){$multiplier=250;}
+//    $multiplier = 2;
     $result = 0;
     if ($chances[$index] == $winAverage) {
         $result = $chances[$index];
@@ -35,48 +37,48 @@ for ($i = 0; $i < $initialI; $i++) {
         $consecutiveArrayData[$i] = -1;
     }
 
-    if ($martingaleCount != 0) {
-        if ($martingaleCount == 1) {
-            $result = $result * $martingaleCoeff;
-            if ($result < 0) {
-//                $martingaleLossCount++;
-            }
-        }
-        if ($martingaleCount == 2) {
+//    if ($martingaleCount != 0) {
+//        if ($martingaleCount == 1) {
+//            $result = $result * $martingaleCoeff;
+//            if ($result < 0) {
+////                $martingaleLossCount++;
+//            }
+//        }
+//        if ($martingaleCount == 2) {
+////            $martingaleCount = 0;
+//            $result = $result * ($martingaleCoeff * 2);
+//            if ($result < 0) {
+////                $martingaleLossCount++;
+//            }
+//        }
+//        if ($martingaleCount == 3) {
 //            $martingaleCount = 0;
-            $result = $result * ($martingaleCoeff * 2);
-            if ($result < 0) {
-                $martingaleLossCount++;
-            }
-        }
-        if ($martingaleCount == 3) {
-            $martingaleCount = 0;
 //            $result = $result * ($martingaleCoeff * 2 * 2);
-            if ($result < 0) {
+//            if ($result < 0) {
 //                $martingaleLossCount++;
-            }
-        }
-
-        if ($martingaleCount == 4) {
-            $martingaleCount = 0;
-//            $result = $result * ($martingaleCoeff * 2 * 2 * 2);
-            if ($result < 0) {
-//                $martingaleLossCount++;
-            }
-        }
-
-        if ($martingaleCount == 5) {
-            $martingaleCount = 0;
-        }
-    }
+//            }
+//        }
+//
+//        if ($martingaleCount == 4) {
+//            $martingaleCount = 0;
+////            $result = $result * ($martingaleCoeff * 2 * 2 * 2);
+//            if ($result < 0) {
+////                $martingaleLossCount++;
+//            }
+//        }
+//
+//        if ($martingaleCount == 5) {
+//            $martingaleCount = 0;
+//        }
+//    }
 
     $result = round(($result * $multiplier), 2);
 
-    if ($result < 0) {
-        $martingaleCount++;
-    } else {
-        $martingaleCount = 0;
-    }
+//    if ($result < 0) {
+//        $martingaleCount++;
+//    } else {
+//        $martingaleCount = 0;
+//    }
 
     $amount += round($result, 2);
     if ($i == 0) {
