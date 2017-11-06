@@ -99,8 +99,8 @@
             <!--Map Canvas-->
             <div class="map-canvas"
                  data-zoom="16"
-                 data-lat="51.5139502"
-                 data-lng="-0.0632127"
+                 data-lat="51.51396503"
+                 data-lng="-0.06197137"
                  data-type="roadmap"
                  data-hue="#ffc400"
                  data-title="ukeandcs.com"
