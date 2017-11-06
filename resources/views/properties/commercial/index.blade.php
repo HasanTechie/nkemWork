@@ -201,10 +201,6 @@
                                         <div class="separator"></div>
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <div class="separator"></div>
-                                    </div>
-
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <button type="submit" class="theme-btn btn-style-one">Search Filters</button>
                                     </div>
                                 </div>
