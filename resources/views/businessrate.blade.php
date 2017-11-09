@@ -51,8 +51,7 @@
                                         <p>Our experienced Chartered Surveyor shall advise and deal with Business Rates
                                             Refunds & / Reductions. We will make an Application for Refunds and
                                             Overpayment, Rates Relief & File an Appeal Application. In addition, our
-                                            Surveyor also deal and challenges unfair business lease terms and rent
-                                            increases.
+                                            Surveyor also deal and challenges rent review and lease terms.
                                         <p>
                                             The 2017 revaluation reflected substantial rises and planned to even
                                             increases further. Due to the procedural changes dealing with business rates
